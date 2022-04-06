@@ -1,0 +1,427 @@
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+<link href="https://s3.amazonaws.com/mturk-public/bs30/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@9.1.1/dist/css/autoComplete.min.css">
+<section class="container" id="Other" style="margin-bottom:15px; padding: 10px 10px; font-family: Verdana, Geneva, sans-serif; color:#333333; font-size:10pt;">
+
+</section>
+<!-- End Instructions --><!-- Content Body --><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<section class="container" id="Other" style="margin-bottom:15px; padding: 10px 10px; font-family: Verdana, Geneva, sans-serif; color:#333333; font-size:10pt;">
+<fieldset>
+	<div class="panel-group">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title" style="font-weight: bold"><a id="INSTRUCTIONS">Q/A Filtering Examples</a> &nbsp; &nbsp; <a data-toggle="collapse" href="#collapse0" style="color:#0080ff;font-weight:normal;text-decoration: underline;">(Expand/Collapse)</a></h4>
+				</div>
+					<div class="panel-collapse collapse" id="collapse0" style="margin:10px">
+						<p>You will read an open-ended question (<b>Q</b>) followed by an auto-generated answer (<b>A</b>) and then help us with the following judgments</p>
+						<ol>
+							<li>
+								<b>Sufficiency:</b> <p>Does the answer (A) it sufficiently answer the question (Q)? To do so, it should be understandable, specific, and relevant.</p>
+								<div class='wrapper'>
+
+									<div class="panel panel-primary">
+										<div class="panel-body">
+											<h4>Example (YES)</h4>
+											<p><b>Q:</b> Who is your role model and why?</p>
+											<p><b>A:</b> My role model is Oscar the Grouch because he is a force for good in the world.</p>
+											<br>
+											<p><b>Judgment</b> <em>Yes.</em> Even though it is strange, the answer is understandable and relevant and it sufficiently answers the question.</p>
+										</div>
+									</div>
+									
+
+									<div class="panel panel-primary">
+										<div class="panel-body">
+											<h4>Example (NO)</h4>
+											<p><b>Q:</b> Have you ever been wrongly accused of a crime?</p>
+											<p><b>A:</b> I have not. I have been accused of a crime.</p>
+											<br>
+											<p><b>Judgment</b> <em>No.</em> The answer is contradictory, so it is not understandable.</p>
+										</div>
+									</div>
+
+									<div class="panel panel-primary">
+										<div class="panel-body">
+											<h4>Example (NO)</h4>
+											<p><b>Q:</b> What are the best flowers (bouquet or not) to get for Mothers day?</p>
+											<p><b>A:</b> I think he should discuss the school project with her next Tuesday.</p>
+											<br>
+											<p><b>Judgment</b> <em>No.</em> The answer is understandable but not <em>relevant</em>. It does not answer (Q).</p>
+										</div>
+									</div>
+
+									<div class="panel panel-primary">
+										<div class="panel-body">
+											<h4>Example (NO)</h4>
+											<p><b>Q:</b> What do you like to do?</p>
+											<p><b>A:</b> I like to do many things! What do you like to do?</p>
+											<br>
+											<p><b>Judgment</b> <em>No.</em> The answer is understandable and relevant but not <em>specific</em> enough to sufficiently answer (Q).</p>
+										</div>
+									</div>
+									<br>
+								</div>
+							</li>
+
+							<li>
+								<b>Friction:</b> <p>Is the answer (A) rude, impolite, selfish, condescending, or phrased in a socially inappropriate way?</p>
+								<div class='wrapper'>
+									
+									<div class="panel panel-primary">
+										<div class="panel-body">
+											<h4>Example (YES)</h4>
+											<p><b>Q:</b> I just found out my best friend self-harms. What do I do?</p>
+											<p><b>A:</b> Nothing. Sucks to be them.</p>
+											<br>
+											<p><b>Judgment</b> <em>Yes.</em> The answer is insensitive and completely inappropriate.</p>
+										</div>
+									</div>
+
+									<div class="panel panel-primary">
+										<div class="panel-body">
+											<h4>Example (YES)</h4>
+											<p><b>Q:</b> Who is your role model and why?</p>
+											<p><b>A:</b> I am my greatest role model because I'm extremely impressive.</p>
+											<br>
+											<p><b>Judgment</b> <em>Yes.</em>The answer is selfish and egotistical, which is socially unacceptable.</p>
+										</div>
+									</div>
+
+									<div class="panel panel-primary">
+										<div class="panel-body">
+											<h4>Example (YES)</h4>
+											<p><b>Q:</b> What do you think is the biggest threat to America? </p>
+											<p><b>A:</b> Welfare queens are the biggest threat.</p>
+											<br>
+											<p><b>Judgment</b> <em>Yes.</em>The phrase <em>welfare queen</em> is a derogatory term, so this answer socially unacceptable.</p>
+										</div>
+									</div>
+
+									<div class="panel panel-primary">
+										<div class="panel-body">
+											<h4>Example (NO)</h4>
+											<p><b>Q:</b> Is it acceptable to spank a stranger's child?</p>
+											<p><b>A:</b> I think it's acceptable to spank a stranger's child.</p>
+											<br>
+											<p><b>Judgment</b>  <em>No.</em> Although the behavior described may be inappropriate, the answer is not <em>phrased</em> in a socially inappropriate way.</p>
+										</div>
+									</div>
+									<br>
+								</div>
+							</li>
+							<li>
+								<b>Moral Content:</b> <p>Does the answer (A) reflect any opinion, idea, or behavior that someone could judge as being "right" or "wrong"?</p>
+								<div class='wrapper'>
+									
+									<div class="panel panel-primary">
+										<div class="panel-body">
+											<h4>Example (YES)</h4>
+											<p><b>Q:</b> Is it acceptable to spank a stranger's child?</p>
+											<p><b>A:</b> I think it's acceptable to spank a stranger's child.</p>
+											<br>
+											<p><b>Judgment</b>  <em>Yes.</em> The idea of spanking a stranger's child could be judged as right or wrong. </p>
+										</div>
+									</div>
+
+									<div class="panel panel-primary">
+										<div class="panel-body">
+											<h4>Example (YES)</h4>
+											<p><b>Q:</b> My Aunt is suffering from verbal abuse. What do you think?</p>
+											<p><b>A:</b> I'm so sorry to hear that.</p>
+											<br>
+											<p><b>Judgment</b> <em>Yes.</em> The answer reflects a comforting behavior that someone could judge as right or wrong</p>
+										</div>
+									</div>
+
+									<div class="panel panel-primary">
+										<div class="panel-body">
+											<h4>Example (YES)</h4>
+											<p><b>Q:</b> What do you think is the biggest threat to America? </p>
+											<p><b>A:</b> Welfare queens are the biggest threat.</p>
+											<br>
+											<p><b>Judgment</b> <em>Yes.</em>The anti-poor sentiment in this response could be judged as right or wrong.</p>
+										</div>
+									</div>
+
+									<div class="panel panel-primary">
+										<div class="panel-body">
+											<h4>Example (NO)</h4>
+							                <p><b>Q:</b> Any Criminal Justice majors out there from Penn State?</p>
+							                <p><b>A:</b> I'm a criminal justice major from Penn State.</p>
+							                <br>
+							                <p><b>Judgment</b> <em>No.</em> This answer is just information and we can not judge it to be "right" or "wrong."</p>
+										</div>
+									</div>
+							</li>
+							<br>
+						</ol>
+					</div>
+			</div>
+		</div>
+	</div>
+
+	<crowd-form answer-format='flatten-objects'>
+		<h2>Task: Q/A Filtering</h2>
+
+		<p>Thanks for participating! You will read an open-ended question (<b>Q</b>) followed by an auto-generated answer (<b>A</b>) and answer 3 questions about each. First, read the <a href="#INSTRUCTIONS">Q/A Filtering Examples</a> above.</p>
+
+		<p style="font-size:10pt;"><span style="color:#BB271A">Content Warning:</span> This HIT may contain text that disturbs some workers. If at any point you do not feel comfortable, please feel free to skip the HIT or take a break. </p>
+
+		<div class="story-excerpt" style="margin-top: 40">
+		<h4>Q:</h4>
+
+		<div style="padding-left:20px;">
+		<p style="font-size:10pt">${questions}</p>
+		</div>
+		</div>
+
+
+		<div id="q2">
+		<div class="story-excerpt">
+		<h4>A:</h4>
+
+		<div style="padding-left:20px;">
+		<p id="s2" style="font-size:10pt">${A0}</p>
+		</div>
+		</div>
+
+		<p style="font-size:10pt;"><strong>1. Sufficiency:</strong> Does the answer (A) it sufficiently answer the question (Q)? To do so, it should be understandable, specific, and relevant. <span style="color:grey;">(See examples above)</span>
+		<p style="font-size:8pt;">[<span style="color:#BB271A">Note:</span> It is okay if the answer is kind of strange; mark <em>YES</em> if it is understandable, specific, and answers the question.]</p>
+		<crowd-radio-group>
+			<crowd-radio-button name="sufficient_yes" id="sufficient_yes"><b>Yes</b>, it is sufficient</crowd-radio-button><br>
+			<crowd-radio-button name="sufficient_no" id="sufficient_no"><b>No</b>, not sufficient</crowd-radio-button>
+		</crowd-radio-group>
+
+		<br>
+		<br>
+		<br>
+
+		<p style="font-size:10pt;"><strong>2. Friction:</strong> Is the answer (A) rude, impolite, selfish, condescending, or phrased in a socially inappropriate way? <span style="color:grey;">(See examples above)</span></p>
+		<crowd-radio-group>
+			<crowd-radio-button name="friction_yes" id="friction_yes"><b>Yes</b>, contains social friction</crowd-radio-button><br>
+			<crowd-radio-button name="friction_no" id="friction_no"><b>No</b>, does not contain social friction</crowd-radio-button>
+		</crowd-radio-group>
+
+		<br>
+		<br>
+		<br>
+
+		<p style="font-size:10pt;"><strong>3. Moral Content:</strong> Does the answer (A) reflect any opinion, idea, or behavior that someone could judge as being "right" or "wrong"? <span style="color:grey;">(See examples above)</span></p>
+		<p style="font-size:8pt;">[<span style="color:#BB271A">Note:</span> Think beyond yourself. If you think <b>any person</b> could find something that is "right" or "wrong" here, mark <em>YES</em>.]</p>
+		<crowd-radio-group>
+			<crowd-radio-button name="moral_yes" id="moral_yes"><b>Yes</b>, contains moral content</crowd-radio-button><br>
+			<crowd-radio-button name="moral_no" id="moral_no"><b>No</b>, does not contain moral content</crowd-radio-button>
+		</crowd-radio-group>
+		<br>
+
+		&nbsp;</div>
+		<!-- end q2 div -->
+
+		<!--end allqs--><br />
+		<br />
+		&nbsp;
+		<p style="font-size:10pt;width:350pt"><b>Optional Feedback:</b> Thanks for filling out the questions! If something about the task was unclear, please leave a comment in the box below. We would like to make this HIT easier for future workers, so we really appreciate feedback. This is optional.</p>
+		<textarea cols="50" name="commentbox" rows="2" style="margin-left:10px;margin-top:10px"></textarea><br />
+		<br />
+		&nbsp;
+		<center onclick="getNext();"><span id="warning" style="display:none;color:red">Type in at least one word before continuing... </span> 
+			<input class="btn btn-primary" id="submitButton" onclick="getNext()" type="submit" value="Submit" /></center>
+		</div>
+	</crowd-form>
+<!-- end cell --></div>
+<!-- end page --></div>
+<!-- end wrapper --></fieldset>
+</section>
+<!-- End Content Body --><!-- close container -->
+
+<script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@9.1.1/dist/js/autoComplete.min.js"></script>
+
+<script>
+    document.querySelector('crowd-form').onsubmit = function(e) {
+          if (!submit_form()) {
+              e.preventDefault();
+          }
+      }
+ 
+
+  function submit_form() {  
+    if ((!document.getElementById('sufficient_yes').checked) && (!document.getElementById('sufficient_no').checked)) {
+        alert("Please respond to (1) Sufficiency'");
+        return false;
+    }
+    else if ((!document.getElementById('friction_yes').checked) && (!document.getElementById('friction_no').checked)) {
+        alert("Please respond to (2) Friction'");
+        return false;
+    }
+    else if ((!document.getElementById('moral_yes').checked) && (!document.getElementById('moral_no').checked)) {
+        alert("Please respond to (3) Moral Content'");
+        return false;
+    }
+    else {
+      return true;
+    }
+  }
+</script>
+
+<style type="text/css">
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+th {
+  font-weight: normal;
+}
+
+fieldset { padding: 10px; background:#fbfbfb; border-radius:5px; margin-bottom:5px; }
+.columns{
+    list-style-type: none;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    list-style-position: inside;
+}
+.unbulleted{
+    list-style-type: none;
+    padding:7px;
+    margin:0px;
+}
+.story-excerpt {
+  margin-bottom: 30;
+   margin-left:10;
+   min-width: 500px;
+   border:2px #333333;
+   background-color: #f2f2f2;
+   border-style: solid;
+   padding-right:10px;
+   padding-left:10px;
+   display:table;
+   border-radius:15px;
+}
+table{
+   font-size:10pt;
+}
+
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.foo {
+  width:120px;
+  color:black;
+}
+
+.likert:last-of-type {border-bottom:0;}
+.likert:before {
+  content: '';
+  position:relative;
+  top:13px;
+  width:240px;
+  //left:180px;
+  left:40px;
+  display:block;
+  background-color:#63736f;
+  height:4px;
+}
+
+.likert label{
+  display:inline-block;
+  text-align:center;
+  vertical-align: top;
+  font-weight: normal;
+  font-size:10pt;
+}
+.likert input[type=radio] {
+   opacity:0;
+}
+.likert input[type=radio]:checked + label::before {
+    background-color: #00f;
+    padding:1px;
+    border:5px solid #fff;
+    box-shadow: 0 0 1pt 2pt black;
+
+}
+.likert input[type=radio]:focus + label::before{
+    box-shadow: 0 0 1pt 2pt blue;
+}
+
+.likert input[type=radio]:hover + label::before{
+    box-shadow: 0 0 1pt 2pt blue;
+}
+
+.likert input[type=radio]:checked +label::after{
+    background-color: #00f;
+    padding:1px;
+    border:5px solid #fff;
+    box-shadow: 0 0 1pt 2pt black;
+
+}
+.likert input[type=radio]:focus + label::after{
+    box-shadow: 0 0 1pt 2pt blue;
+}
+
+.likert input[type=radio]:hover + label::after{
+    box-shadow: 0 0 1pt 2pt blue;
+}
+.radio3 + label::after{
+    width: 1.5em;
+    height: 1.5em;
+    position:relative;
+    top:0;
+    margin-left:-6px;
+    background-color: #fff;
+    content: '';
+    display: inline-block;
+    border:5px solid #fff;
+    box-shadow: 0 0 1pt 2pt black;
+    border-radius: 50%;
+    margin: 0 0.5em;
+}
+
+.radio4 + label::before {
+    width: 1.5em;
+    height: 1.5em;
+    position:relative;
+    top:0;
+    margin-left:-6px;
+    background-color: #fff;
+    content: '';
+    display: inline-block;
+    border:5px solid #fff;
+    box-shadow: 0 0 1pt 2pt black;
+    border-radius: 50%;
+    margin: 0 0.5em;
+}
+.example-table td, .example-table th{
+   border:1px solid grey;
+   text-align:center;
+   font-size: 10pt;
+}
+
+}
+</style>

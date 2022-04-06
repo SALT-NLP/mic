@@ -1,0 +1,626 @@
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+<link href="https://s3.amazonaws.com/mturk-public/bs30/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@9.1.1/dist/css/autoComplete.min.css">
+<section class="container" id="Other" style="margin-bottom:15px; padding: 10px 10px; font-family: Verdana, Geneva, sans-serif; color:#333333; font-size:10pt;">
+
+</section>
+<!-- End Instructions --><!-- Content Body --><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<section class="container" id="Other" style="margin-bottom:15px; padding: 10px 10px; font-family: Verdana, Geneva, sans-serif; color:#333333; font-size:10pt;">
+<fieldset>
+
+	<h2>Instructions.</h2> <!-- <span style="color:#BB271A">This is a pilot round. Soon, we will add more HITs for strong workers.</span> -->
+	<p style="font-size:12pt;"><span style="color:#BB271A">Content Warning:</span> This HIT may contain text that disturbs some workers. If at any point you do not feel comfortable, please feel free to skip the HIT or take a break. </p>
+	<a href="#TASK_BEGINNING">[Jump to Task]</a>
+	<div class="panel-group">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title" style="font-weight: bold"><a id="ROT_INSTRUCTIONS">Rule Of Thumb (RoT) Instructions</a> &nbsp; &nbsp; <a data-toggle="collapse" href="#collapse0" style="color:#0080ff;font-weight:normal;text-decoration: underline;">(Expand/Collapse)</a></h4>
+				</div>
+					<div class="panel-collapse collapse" id="collapse0" style="margin:10px">
+						<p>You will read an open-ended question (<b>Q</b>) followed by an auto-generated answer (<b>A</b>) and create for us a short "Rule of Thumb" (RoT) that can help us judge the situation. An RoT should:</p>
+						<ol>
+							<li>
+								<p>Explain the basics of good and bad behavior.</p>
+								<p style="font-size:8pt;color:grey;margin-left:2px">(This can be a moral rule, a social norm, or a bit of advice for how to behave)</p>
+								<div class="panel panel-primary">
+									<div class="panel-body">
+										<h4>Example</h4>
+										<p><b>Q:</b> If you were given $1 million to kill the love of your life, would you do it?</p>
+										<p><b>A:</b> I'd do it for the money</p>
+										<ul>
+											<li><b>Acceptable RoT:</b> It is wrong to kill someone.</li>
+											<li><b>Unacceptable RoT:</b> $1 million is a lot of money.</li>
+										</ul>
+										<br>
+										<p><b>Why?</b> The Acceptable RoT is about right and wrong. The Unacceptable RoT is just an opinion.</p>
+									</div>
+								</div>
+								<br>
+							</li>
+							<li>
+								<p>Contain a <u>judgment</u> (e.g. "<em>You should</em>") and an <u>action</u> (e.g. "<em>give money to the poor</em>")</p>
+								<div class="panel panel-primary">
+									<div class="panel-body">
+										<h4>Example</h4>
+										<p><b>Q:</b> What should I do when my kids misbehave?</p>
+										<p><b>A:</b> Take out your belt and show them who's boss.</p>
+										<ul>
+											<li><b>Acceptable RoT:</b> It is wrong to abuse your kids.</li>
+											<li><b>Unacceptable RoT:</b> Studies suggest 95% of kids misbehave at least once per day.</li>
+										</ul>
+										<br>
+										<p><b>Why?</b> The Acceptable RoT has a <u>judgment</u> ("<em>It is wrong</em>") and an <u>action</u> ("<em>to abuse your kids</em>"). The Unacceptable RoT is just an encyclopedia fact with no judgment of right or wrong.</p>
+									</div>
+								</div>
+								<br>
+							</li>
+							<li>
+								<p>Make a <em>general</em> rule but still provide enough detail -- it should be understandable even <em>out of context</em></p>
+								<div class="panel panel-primary">
+									<div class="panel-body">
+										<h4>Example</h4>
+										<p><b>Q:</b> Your parents have been abducted and are being held prisoner by a ruthless villain. His terms: You must kill one of your parents by your own hand, or he will kill both of them. What do you do?</p>
+										<p><b>A:</b> I would laugh.</p>
+										<ul>
+											<li><b>Acceptable RoT:</b> It is wrong to laugh at your parents' death.</li>
+											<li><b>Unacceptable RoT:</b> It is wrong to be insensitive.</li>
+											<li><b>Unacceptable RoT:</b> It is wrong to laugh like that.</li>
+											<li><b>Unacceptable RoT:</b> It is wrong to laugh when a villain abducts your parents and tells you to kill one of them or he will kill both of them.</li>
+										</ul>
+										<br>
+										<p><b>Why?</b> The Acceptable RoT is a general rule, but it is also clearly inspired by the particular situation. The first Unacceptable RoT is not specific enough. The second is too context-specific (we don't know what "like that" means). The third Unacceptable RoT includes details that are too specific and apply only in this exact situation.</p>
+									</div>
+								</div>
+							</li>
+							<br>
+						</ol>
+					</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="panel-group">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title" style="font-weight: bold"><a id="MFT_INSTRUCTIONS">Moral Foundations Instructions</a> &nbsp; &nbsp; <a data-toggle="collapse" href="#collapse1" style="color:#0080ff;font-weight:normal;text-decoration: underline;">(Expand/Collapse)</a></h4>
+				</div>
+
+				<div class="panel-collapse collapse" id="collapse1" style="margin:10px">
+
+					<p>We list six foundations of human morality here, and we would like you to classify your RoT using one or more of these dimensions. Please closely consider the definitions and the example RoTs we provide for each foundation.</p>
+
+					<div class='wrapper'>
+
+					<div class="row col-xs-12 col-md-12 info-panel"><!-- Care/Harm -->
+						<div class="panel panel-primary" style="border-color: #9B5277">
+							<div class="panel-heading" style="background-image: none;background-color: #9B5277;border-color: #9B5277"><strong>Care/Harm</strong></div>
+
+							<div class="panel-body">
+								<p><span style="color:#9B5277"><b>Care:</b></span> wanting someone or something to be safe, healthy, and happy <br><br> <span style="background-color:#9B5277; color:white;">Harm:</span> wanting someone or something to suffer physically, emotionally, socially, intellectually, or spiritually </p>
+								<hr>
+								<p>RoT Examples: </p>
+								<ul>
+									<li>You shouldn't abuse your kids.</li>
+									<li>You should let people know when someone needs medical attention.</li>
+									<li>It's wrong to celebrate when someone is hurt.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="row col-xs-12 col-md-12 info-panel"><!-- Fairness/Cheating -->
+						<div class="panel panel-primary" style="border-color: #634FA2">
+							<div class="panel-heading" style="background-image: none;background-color: #634FA2;border-color: #634FA2"><strong>Fairness/Cheating</strong></div>
+
+							<div class="panel-body">
+								<p><span style="color:#634FA2"><b>Fairness:</b></span> wanting to see individuals or groups treated equally or equitably <br><br><span style="background-color:#634FA2; color:white;">Cheating:</span> wanting to see unfairness, injustice, bias, exclusion, or discrimination </p> 
+								<hr>
+								<p>RoT Examples: </p>
+								<ul>
+									<li>It is bad to steal.</li>
+									<li>You shouldn't discriminate against people with disabilities.</li>
+									<li>It is wrong to not pay your utility bills.</li>
+									<li>Parents should not have a favorite child.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="row col-xs-12 col-md-12 info-panel"><!-- Liberty/Oppression -->
+						<div class="panel panel-primary" style="border-color: #5AA2A6">
+							<div class="panel-heading" style="background-image: none;background-color: #5AA2A6;border-color: #5AA2A6"><strong>Liberty/Oppression</strong></div>
+
+							<div class="panel-body">
+								<p><span style="color:#5AA2A6"><b>Liberty:</b></span> wanting people to be free to make their own decisions <br><br> <span style="background-color:#5AA2A6; color:white;">Oppression:</span> wanting to restrict or suppress people's rights and personal choices </p>
+
+								<hr>
+								<p>RoT Examples: </p>
+								<ul>
+									<li>It is controlling to tell a partner what they can and cannot do with their body.</li>
+									<li>It is bad to stop people from voting.</li>
+									<li>People should be allowed to practice their own religion.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="row col-xs-12 col-md-12 info-panel"><!-- Loyalty/Betrayal -->
+						<div class="panel panel-primary" style="border-color: #78A65A">
+							<div class="panel-heading" style="background-image: none;background-color: #78A65A;border-color: #78A65A"><strong>Loyalty/Betrayal</strong></div>
+
+							<div class="panel-body">
+								<p><span style="color:#78A65A"><b>Loyalty:</b></span> wanting unity and seeing people keep promises or obligations to an in-group <br><br> <span style="background-color:#78A65A; color:white;">Betrayal:</span> wanting to see people lie, abandon an in-group, or become isolated and divided </p>
+								
+								<hr>
+								<p>RoT Examples: </p>
+								<ul>
+									<li>It's rude to hang up on someone.</li>
+									<li>You shouldn't flake on your friends.</li>
+									<li>You should be there for your family.</li>
+									<li>You should trust your spouse.</li>
+									<li>It's inappropriate to flirt with other guys when you already have a boyfriend.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="row col-xs-12 col-md-12 info-panel"><!-- Authority/Subversion -->
+						<div class="panel panel-primary" style="border-color: #DA954B">
+							<div class="panel-heading" style="background-image: none;background-color: #DA954B;border-color: #DA954B"><strong>Authority/Subversion</strong></div>
+
+							<div class="panel-body">
+								<p><span style="color:#DA954B"><b>Authority:</b></span> wanting to respect social roles, duties, privacy, peace, and order <br><br> <span style="background-color:#DA954B; color:white;">Subversion:</span> wanting to see people disrespect, disobey or cause disorder, challenge the status-quo, and do what they do not have permission to do</p>
+
+								<hr>
+								<p>RoT Examples: </p>
+								<ul>
+									<li>It is good to establish boundaries in a home.</li>
+									<li>You should respect your teachers.</li>
+									<li>It is wrong to scream "bomb" in an airport.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="row col-xs-12 col-md-12 info-panel"><!-- Authority/Subversion -->
+						<div class="panel panel-primary" style="border-color: #BB271A">
+							<div class="panel-heading" style="background-image: none;background-color: #BB271A;border-color: #BB271A"><strong>Sanctity/Degradation</strong></div>
+
+							<div class="panel-body">
+								<p><span style="color:#BB271A"><b>Sanctity:</b></span> wanting people and things to be clean, pure, innocent, and holy <br><br> <span style="background-color:#BB271A; color:white;">Degradation:</span> wanting people to follow selfish or crude desires and do things that make them or others dirty, corrupt, sick, repulsive, or perverted</p>
+
+								<hr>
+								<p>RoT Examples: </p>
+								<ul>
+									<li>You shouldn't make inappropriate jokes.</li>
+									<li>You shouldn't do drugs.</li>
+									<li>You shouldn't put dog poop in front of someone's door.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					</div>
+			</div>
+		</div>
+	</div>
+
+	<br>
+	<p>We offer some fully-worked examples for you to consider.</p>
+
+	<table class="example-table" style="font-size:10pt;border:1px solid grey;text-align:center;margin: 0 auto">
+		<tbody>
+			<tr>
+				<th style="width: 50px"></th>
+				<th style="width: 100px"><b>Q</b></th>
+				<th style="width: 100px"><b>A</b></th>
+				<th style="width: 100px"><b>RoT</b></th>
+				<th style="width: 50px"><b>Answer Alignment</b></th>
+				<th style="width: 100px"><b>Severity of Violating RoT (1-5)</b></th>
+				<th style="width: 50px"><b>Anticipated Consensus</b></th>
+				<th style="width: 50px"><b>Moral Foundations</b></th>
+				<th style="width: 100px"><b>Answer Re-Write</b></th>
+			</tr>
+			<tr>
+				<td>1.</td>
+				<td>If you were given $1 million to kill the love of your life, would you do it?</td>
+				<td>I would do it for the money.</td>
+				<td>It is wrong to kill your significant other.</td>
+				<td>Disagree</td>
+				<td>5 (Severe)</td>
+				<td>>99%</td>
+				<td><span style="color:#9B5277"><b>Harm</b></span> and <span style="color:#78A65A"><b>Betrayal</b></span></td>
+				<td>No amount of money could convince me to kill my love.</td>
+			</tr>
+			<tr>
+				<td>2.</td>
+				<td>Is it acceptable to discipline a perfect stranger's child?</td>
+				<td>I think it's acceptable to discipline a perfect stranger's child.</td>
+				<td>Strangers do not have the authority to discipline other strangers' children</td>
+				<td>Disagree</td>
+				<td>3</td>
+				<td>~50%</td>
+				<td><span style="color:#DA954B"><b>Subversion</b></span></td>
+				<td>I don't think it's okay to discipline stranger's children.</td>
+			</tr>
+			<tr>
+				<td>3.</td>
+				<td>If religions were taxed leading to mandatory entrance fees, would you still go?</td>
+				<td>Yes, my faith means a lot to me.</td>
+				<td>It is good to be involved in a community of faith.</td>
+				<td>Agree</td>
+				<td>1 (Minor)</td>
+				<td>~50%</td>
+				<td><span style="color:#78A65A"><b>Loyalty</b></span> and <span style="color:#BB271A"><b>Sanctity</b></span></td>
+				<td>Of course, church is important.</td>
+			</tr>
+			<tr>
+				<td>4.</td>
+				<td>My mom has terminal cancer. She wishes could move somewhere like Oregon where assisted suicide is an option. This is hard for me to hear. What do you think?</td>
+				<td>I think it's a personal decision. People should have the right to decide how much pain they want to endure.</td>
+				<td>People should have the right to voluntarily end their own life.</td>
+				<td>Agree</td>
+				<td>3</td>
+				<td>~5% - 25%</td>
+				<td><span style="color:#5AA2A6"><b>Liberty</b></span></td>
+				<td>I think she has the right to feel that way.</td>
+			</tr>
+			<tr>
+				<td>5.</td>
+				<td>Why do 90% of horror moves start with a family moving into a new home, The family gets a good deal on a big run down house?</td>
+				<td>I think it has to do with the fact that most horror movies are based on a true story</td>
+				<td>It is unhelpful to make up facts.</td>
+				<td>Disagree</td>
+				<td>1 (Minor)</td>
+				<td>>99%</td>
+				<td><span style="color:#78A65A"><b>Betrayal</b></span></td>
+				<td>Because that's how they are introduced to the paranormal.</td>
+			</tr>
+
+		</tbody>
+	</table>
+
+	<crowd-form answer-format='flatten-objects'>
+		<h2><a id="TASK_BEGINNING">Task: Moral Evaluation</a></h2>
+
+		<p>Thanks for participating! You will read an open-ended question (<a href="#QUESTION" title="${questions}"><b>Q</b></a>) followed by an auto-generated answer (<a href="#ANSWER" title="${A0}"><b>A</b></a>) and create for us a moral / social "Rule of Thumb." First, please read the <a href="#ROT_INSTRUCTIONS">Rule of Thumb (RoT) Instructions</a> and the <a href="#MFT_INSTRUCTIONS">Moral Foundations Instructions</a> above.</p>
+
+		<div class="story-excerpt" style="margin-top: 40">
+		<a id="QUESTION"><h4>Q:</h4></a>
+
+		<div style="padding-left:20px;">
+		<p style="font-size:10pt">${questions}</p>
+		</div>
+		</div>
+
+
+		<div id="q2">
+		<div class="story-excerpt">
+		<a id="ANSWER"><h4>A:</h4></a>
+
+		<div style="padding-left:20px;">
+		<p id="s2" style="font-size:10pt">${A0}</p>
+		</div>
+		</div>
+
+		<!-- <h3>Questions (Scrolling)</h3> -->
+		<div class='scrolling_questions'>
+		<div style='padding:10px;'>
+
+
+			<p style="font-size:10pt;"><strong>1. RoT:</strong> Write a moral "Rule of Thumb" that you think applies to the answer (<a href="#ANSWER" title="${A0}"><b>A</b></a>) in the context above.</p>
+			<p style="font-size:8pt;color:grey;margin-left:12px">(There may be multiple, but just think of one rule that is either broken or confirmed by <a href="#ANSWER" title="${A0}"><b>A</b></a>)</p>
+			<textarea required cols="50" name="rot" id="rot" rows="2" style="margin-left:10px;margin-top:10px"></textarea>
+			<br>
+			<br>
+
+			<p style="font-size:10pt;"><strong>2. Answer Alignment:</strong> Does the answer (<a href="#ANSWER" title="${A0}"><b>A</b></a>) seem to agree or disagree with your RoT? </p>
+			<crowd-radio-group>
+				<crowd-radio-button name="A_agrees" id="A_agrees">Agree</crowd-radio-button>
+				<crowd-radio-button name="A_disagrees" id="A_disagrees">Disagree</crowd-radio-button>
+				<crowd-radio-button name="A_neither" id="A_neither">Neither</crowd-radio-button>
+			</crowd-radio-group>
+
+
+			<br>
+			<br>
+			<br>
+
+			<p style="font-size:10pt;"><strong>3. Severity of Violation:</strong> On a scale of 1-5, how <em>severe</em> or <em>serious</em> is it when someone does <em>not</em> follow the RoT?</p>
+			<p style="font-size:8pt;color:grey;margin-left:12px"><b>Minor:</b> no one notices or really cares when someone does not follow the RoT.</p>
+			<p style="font-size:8pt;color:grey;margin-left:12px"><b>Severe:</b> breaking the RoT will significantly jeopardize wellbeing, equality, freedom, unity, harmony, or moral integrity.</p>
+			<crowd-radio-group>
+				<crowd-radio-button name="violation_severity_1" id="violation_severity_1"><b>1</b> (Minor)</crowd-radio-button>
+				<crowd-radio-button name="violation_severity_2" id="violation_severity_2"><b>2</b></crowd-radio-button>
+				<crowd-radio-button name="violation_severity_3" id="violation_severity_3"><b>3</b></crowd-radio-button>
+				<crowd-radio-button name="violation_severity_4" id="violation_severity_4"><b>4</b></crowd-radio-button>								
+				<crowd-radio-button name="violation_severity_5" id="violation_severity_5"><b>5</b> (Severe)</crowd-radio-button>
+			</crowd-radio-group>
+			<br>
+			<br>
+			<br>
+<!-- 			<p style="font-size:10pt;"><strong>3. Severity of Violation:</strong> How <em>severe</em> or <em>serious</em> is it when someone does not follow the RoT?</p>
+			<crowd-radio-group>
+				<crowd-radio-button name="violation_severity_severe" id="violation_severity_severe"><b>Severe</b> (e.g. domestic violence, hate speech, fraud, drug abuse): <em>breaking the RoT will significantly jeopardize wellbeing, equality, freedom, unity, harmony, or moral integrity.</em></crowd-radio-button>
+				<crowd-radio-button name="violation_severity_problematic" id="violation_severity_problematic"><b>Problematic</b> (e.g. lying about your age, cheating on a test, being rude, not washing your hands): <em>breaking the RoT is social taboo or violates expectations of good behavior.</em></crowd-radio-button>
+				<crowd-radio-button name="violation_severity_minor" id="violation_severity_minor"><b>Minor</b> (e.g. eating too much, complaining about inconveniences, not knowing how to do taxes): <em>no one notices or really cares when someone does not follow the RoT.</em></crowd-radio-button>
+			</crowd-radio-group>
+
+			<br>
+			<br>
+			<br>
+
+			<p style="font-size:10pt;"><strong>4. Virtue of Observence:</strong> How impressive or extraordinary is it for someone to follow the RoT?</p>
+			<crowd-radio-group>
+				<crowd-radio-button name="observance_virtue_praiseworthy" id="observance_virtue_praiseworthy"><b>Praiseworthy</b> (e.g. philanthropy, feeding the hungry, fighting for social justice): <em>following the RoT is extraordinary and will significantly improve wellbeing, equality, freedom, unity, harmony, or moral integrity.</em></crowd-radio-button>
+				<crowd-radio-button name="observance_virtue_admirable" id="observance_virtue_admirable"><b>Admirable</b> (e.g. staying up late to listen to a friend in need, making dinner when your spouse is sick): <em>following the RoT is good or virtuous but also not very surprising.</em></crowd-radio-button>
+				<crowd-radio-button name="observance_virtue_minor" id="observance_virtue_minor"><b>Minor</b> (e.g. keeping your shoes tied, not murdering people): <em>following the RoT is just "normal" behavior and nothing special.</em></crowd-radio-button>
+			</crowd-radio-group>
+
+			<br>
+			<br>
+			<br> -->
+
+			<p style="font-size:10pt;"><strong>4. Anticipated Consensus:</strong> What percentage of people (globally) do you think would agree with your RoT </p>
+			<p style="font-size:8pt;color:grey;margin-left:12px">(It is okay if the answer is low)</p>
+			<crowd-radio-group>
+				<crowd-radio-button name="rot_consensus_1" id="rot_consensus_1"><span style="color:#666666"><b><1%</b></span></crowd-radio-button>
+				<crowd-radio-button name="rot_consensus_2" id="rot_consensus_2"><span style="color:#4F4F4F"><b>~5% - 25%</b></span></crowd-radio-button>
+				<crowd-radio-button name="rot_consensus_3" id="rot_consensus_3"><span style="color:#3D3D3D"><b>~50%</b></span></crowd-radio-button>
+				<crowd-radio-button name="rot_consensus_4" id="rot_consensus_4"><span style="color:#212121"><b>~75% - 90%</b></span></crowd-radio-button>
+				<crowd-radio-button name="rot_consensus_5" id="rot_consensus_5"><span style="color:#000000"><b>>99%</b></span></crowd-radio-button>
+			</crowd-radio-group>
+
+			<br>
+			<br>
+			<br>
+
+			<p style="font-size:10pt;"><strong>5. Moral Foundations:</strong> Classify your RoT using the Moral Foundations below</p>
+			<p style="font-size:8pt;color:grey;margin-left:12px">(You can pick more than one. Hover over the text for a reminder about the definition.)</p>
+			<br>
+			<div>
+				<crowd-checkbox name="care" id="care"><span style="color:#9B5277" title="Care: wanting someone or something to be safe, healthy, and happy 
+
+Harm: wanting someone or something to suffer physically, emotionally, socially, intellectually, or spiritually"><b>Care/Harm</b></span></crowd-checkbox><br><br>
+				<crowd-checkbox name="fairness" id="fairness"><span style="color:#634FA2" title="Fairness: wanting to see individuals or groups treated equally or equitably
+
+Cheating: wanting to see unfairness, injustice, bias, exclusion, or discrimination"><b>Fairness/Cheating</b></span></crowd-checkbox><br><br>
+				<crowd-checkbox name="liberty" id="liberty"><span style="color:#5AA2A6" title="Liberty: wanting people to be free to make their own decisions
+
+Oppression: wanting to restrict or suppress people's rights and personal choices"><b>Liberty/Oppression</b></span></crowd-checkbox><br><br>
+				
+				<crowd-checkbox name="loyalty" id="LOYALTY"><span style="color:#78A65A" title="Loyalty: wanting unity and seeing people keep promises or obligations to an in-group
+
+Betrayal: wanting to see people lie, abandon an in-group, or become isolated and divided"><b>Loyalty/Betrayal</b></span></crowd-checkbox><br><br>
+
+				<crowd-checkbox name="authority" id="authority"><span style="color:#DA954B" title="Authority: wanting to respect social roles, duties, privacy, peace, and order
+
+Subversion: wanting to see people disrespect, disobey or cause disorder, challenge the status-quo, and do what they do not have permission to do"><b>Authority/Subversion</b></span></crowd-checkbox><br><br>
+				<crowd-checkbox name="sanctity" id="sanctity"><span style="color:#BB271A" title="Sanctity: wanting people and things to be clean, pure, innocent, and holy
+
+Degradation: wanting people to follow selfish or crude desires and do things that make them or others dirty, corrupt, sick, repulsive, or perverted"><b>Sanctity/Degradation</b></span></crowd-checkbox><br><br>
+				<crowd-checkbox name="not_moral" id="not_moral"><b>None Apply</b></crowd-checkbox>
+			</div>
+
+			<br>
+			<br>
+			<br>
+
+			<p style="font-size:10pt;"><strong>6. Your turn:</strong> Please write your own answer to (<a href="#QUESTION" title="${questions}">Q</a>) that is either neutral or aligns with your RoT. </p>
+			<p style="font-size:8pt;color:grey;margin-left:12px">Q: ${questions}</p>
+			<p style="font-size:8pt;color:grey;margin-left:12px">(We are using <a href='https://languagetool.org/'>LanguageTool</a> to check basic grammar and spelling here. If you are having issues with this, please consider using their free plugin to help you.)</p>
+			<textarea required cols="50" name="revised_answer" id="revised_answer" rows="2" style="margin-left:10px;margin-top:10px"></textarea>
+
+
+			&nbsp;</div>
+			<!-- end q2 div -->
+			
+			<!--end allqs--><br />
+			<br />
+			&nbsp;
+			<p style="font-size:10pt;width:350pt"><b>Optional Feedback:</b> Thanks for filling out the questions! If something about the task was unclear, please leave a comment in the box below. We would like to make this HIT easier for future workers, so we really appreciate feedback. This is optional.</p>
+			<textarea cols="50" name="commentbox" rows="2" style="margin-left:10px;margin-top:10px"></textarea><br />
+			<br />
+			&nbsp;
+			<center onclick="getNext();"><span id="warning" style="display:none;color:red">Type in at least one word before continuing... </span> 
+				<input class="btn btn-primary" id="submitButton" onclick="getNext()" type="submit" value="Submit" /></center>
+		</div>
+		</div>
+		</div>
+	</crowd-form>
+<!-- end cell --></div>
+<!-- end page --></div>
+<!-- end wrapper --></fieldset>
+</section>
+<!-- End Content Body --><!-- close container -->
+
+<style type="text/css">
+/*div.scrolling_questions {
+  height: 400px;
+  overflow: scroll;
+  border-style: solid;
+}*/
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.info-panel {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+th {
+  font-weight: normal;
+}
+
+fieldset { padding: 10px; background:#fbfbfb; border-radius:5px; margin-bottom:5px; }
+.columns{
+    list-style-type: none;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    list-style-position: inside;
+}
+.unbulleted{
+    list-style-type: none;
+    padding:7px;
+    margin:0px;
+}
+.story-excerpt {
+  margin-bottom: 30;
+   margin-left:10;
+   min-width: 500px;
+   border:2px #333333;
+   background-color: #f2f2f2;
+   border-style: solid;
+   padding-right:10px;
+   padding-left:10px;
+   display:table;
+   border-radius:15px;
+}
+table{
+   font-size:10pt;
+}
+
+.foo {
+  width:120px;
+  color:black;
+}
+
+.example-table td, .example-table th{
+   border:1px solid grey;
+   text-align:center;
+   font-size: 10pt;
+}
+
+}
+</style>
+
+<script>
+    document.querySelector('crowd-form').onsubmit = function(e) {
+          if (!submit_form()) {
+              e.preventDefault();
+          }
+      }
+
+	/**
+	 * Counts n-grams.
+	 * modified from : https://github.com/words/n-gram/blob/main/index.js
+	*/
+
+  function ngrams(value, n=2) {
+    /** @type {T[]} */
+    var nGrams = {}
+    /** @type {number} */
+    var index
+    /** @type {string|string[]} */
+    var source
+
+    if (value === null || value === undefined) {
+      return nGrams
+    }
+
+    source = value.slice ? value : String(value)
+    index = source.length - n + 1
+
+    if (index < 1) {
+      return nGrams
+    }
+
+    while (index--) {
+      // @ts-ignore
+      var key =  source.slice(index, index + n);
+      if (key in nGrams) {
+      	nGrams[key] = nGrams[key] + 1; 
+      }
+      else {
+      	nGrams[key] = 1;
+      }
+    }
+    return nGrams
+  }
+
+  function max_ngram_count(text, n, ignoreCase=true) {
+  	if (ignoreCase) text = text.toLowerCase();
+	var counts = ngrams(text.split(/\s+/), n=n);
+	var max_count = 0;
+	for (var key in counts) {
+		if ((counts.hasOwnProperty(key)) && (counts[key]>max_count)) {
+			max_count = counts[key]
+		}
+	}
+
+	return max_count;
+  }
+
+  function check_grammar(text) {
+	var xhr = new XMLHttpRequest();
+	xhr.open("POST", 'https://api.languagetoolplus.com/v2/check', false); // false means we should use synchronous instead
+	xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+	xhr.setRequestHeader("Accept", "application/json");
+	var encoded_text = encodeURI(text);
+	xhr.send("text="+encoded_text+"&language=en-US&enabledOnly=false&level=default");
+
+	var response =  JSON.parse(xhr.response);
+    var matches = response['matches'];
+    if ((matches.length > 0) && (matches[0]['message']!=="Possibly missing comma found.") && (matches[0]['message']!=="Possible spelling mistake found.") && (matches[0]['message']!=="Consider adding a conjunction to make this sound more formal.")) { // && (matches[0]['message']!=="Possible spelling mistake found.") Possibly missing comma found.
+      alert("Please fix the following grammar error in (6): " + matches[0]['message']);
+      return false;
+    }
+    else { 
+      return true;
+    }
+  }
+
+  function submit_form() {  
+  	var rot_bow = new Set(document.getElementById('rot').value.split(" ")); // Rule of Thumb token set (Bag of Words)
+	var revised_bow = new Set(document.getElementById('revised_answer').value.split(" ")); // Rule of Thumb token set (Bag of Words)
+
+    if ((!document.getElementById('A_agrees').checked) && (!document.getElementById('A_disagrees').checked) && (!document.getElementById('A_neither').checked)) {
+        alert("Please respond to (2) Answer Alignment");
+        return false;
+    }
+    else if ((!document.getElementById('violation_severity_5').checked) && (!document.getElementById('violation_severity_4').checked) && (!document.getElementById('violation_severity_3').checked) && (!document.getElementById('violation_severity_2').checked) && (!document.getElementById('violation_severity_1').checked)) {
+        alert("Please respond to (3) Severity of Violation");
+        return false;
+    }
+    else if ((!document.getElementById('rot_consensus_1').checked) && (!document.getElementById('rot_consensus_2').checked) && (!document.getElementById('rot_consensus_3').checked) && (!document.getElementById('rot_consensus_4').checked) && (!document.getElementById('rot_consensus_5').checked)) {
+        alert("Please respond to (4) Anticipated Consensus");
+        return false;
+    }
+    else if ((!document.getElementById('care').checked) && (!document.getElementById('fairness').checked) && (!document.getElementById('liberty').checked) && (!document.getElementById('LOYALTY').checked)  && (!document.getElementById('authority').checked) && (!document.getElementById('sanctity').checked) && (!document.getElementById('not_moral').checked)) {
+        alert("Please respond to (5) Moral Foundations");
+        return false;
+    }
+    else if ( rot_bow.size < 3 ) {
+    	alert("Your RoT (1) is very short and/or redundant. Please try elaborating.");
+    	return false;
+    }
+    else if (max_ngram_count(document.getElementById('rot').value, 2) > 3) {
+    	alert("Your RoT (1) uses too many repeated phrases. Please revise.");
+    	return false;
+    }
+    else if ( revised_bow.size < 3 ) {
+    	alert("Your revised answer (6) is very short and/or redundant. Please try elaborating.");
+    	return false;
+    }
+    else if (document.getElementById('rot').value===document.getElementById('revised_answer').value) {
+    	alert("Please make sure your RoT (1) is different from your revised answer (6).");
+    	return false;
+    }
+    else if ( !check_grammar(document.getElementById('revised_answer').value) ) {
+    	// message alert already comes with the check_grammar function
+    	return false;
+    }
+    else {
+      return true;
+    }
+  }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@9.1.1/dist/js/autoComplete.min.js"></script>

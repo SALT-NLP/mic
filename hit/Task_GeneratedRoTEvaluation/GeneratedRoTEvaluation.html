@@ -1,0 +1,401 @@
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+<link href="https://s3.amazonaws.com/mturk-public/bs30/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@9.1.1/dist/css/autoComplete.min.css">
+<section class="container" id="Other" style="margin-bottom:15px; padding: 10px 10px; font-family: Verdana, Geneva, sans-serif; color:#333333; font-size:10pt;">
+
+</section>
+<!-- End Instructions --><!-- Content Body --><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<section class="container" id="Other" style="margin-bottom:15px; padding: 10px 10px; font-family: Verdana, Geneva, sans-serif; color:#333333; font-size:10pt;">
+<fieldset>
+
+	<h2>Instructions.</h2> <!-- <span style="color:#BB271A">This is a pilot round. Soon, we will add more HITs for strong workers.</span> -->
+	<p style="font-size:12pt;"><span style="color:#BB271A">Content Warning:</span> This HIT may contain text that disturbs some workers. If at any point you do not feel comfortable, please feel free to skip the HIT or take a break. </p>
+
+	<div class="panel-group">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title" style="font-weight: bold"><a id="INSTRUCTIONS">Quality Inspection Criteria</a> &nbsp; &nbsp; <a data-toggle="collapse" href="#collapse1" style="color:#0080ff;font-weight:normal;text-decoration: underline;">(Expand/Collapse)</a></h4>
+				</div>
+
+				<div class="panel-collapse collapse" id="collapse1" style="margin:10px">
+						<ol>
+
+							<li>
+								<p><b>Answer Alignment:</b> Does the answer [<a href="#ANSWER" title="${A}"><b>A</b></a>] agree (follow) or disagree with (break) the RoT?</em></p>
+								<div class="panel panel-primary">
+									<div class="panel-body">
+										<h4>Examples</h4>
+										<p><b>Q:</b> If someone you trust offered you $1 million to kill the love of your life, would you do it?</p>
+										<p><b>A:</b> I'd do it for the money</p>
+										<ul>
+											<li><u>RoT:</u> It is bad to kill someone.<br>
+												<em>Answer Alignment:</em> <b>Disagree</b>
+												<p style="font-size:8pt;color:grey;margin-left:20px">Reason: The answer means the author is willing to kill someone, which disagrees with or breaks the Rule: "It is bad to kill someone."</p>
+											</li>
+											<li><u>RoT:</u> It is good to make money<br>
+												<em>Answer Alignment:</em> <b>Agree</b>
+												<p style="font-size:8pt;color:grey;margin-left:20px">Reason: The answer means the author wants to make money, which aligns with the Rule: "It is good to make money."</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<br>
+							</li>	
+
+							<li>
+								<p><b>Well-formed</b>: Does the RoT explain the basics of good and bad behavior with a single <u>judgment</u> (e.g. "<em>You should</em>") and <u>action</u> (e.g. "<em>give money to the poor</em>")?</p>
+								<div class="panel panel-primary">
+									<div class="panel-body">
+										<h4>Examples</h4>
+										<p><b>Q:</b> If someone you trust offered you $1 million to kill the love of your life, would you do it?</p>
+										<p><b>A:</b> I'd do it for the money</p>
+										<em>Example RoTs:</em>
+										<ul>
+											<li><u>RoT:</u> It is bad to kill someone.<br>
+												<em>Well-formed:</em> <b>Yes</b>
+												<p style="font-size:8pt;color:grey;margin-left:20px">Reason: This example has a judgment of right and wrong ("<em>it's bad</em>") about a specific belief or behavior (murder).</p>
+											</li>
+											<li><u>RoT:</u> It's wrong to do that.<br>
+												<em>Well-formed:</em> <b>NO</b>
+												<p style="font-size:8pt;color:grey;margin-left:20px">Reason: We can't understand this RoT outside of context because we don't know what <em>that</em> refers to.</p>
+											</li>
+											<li><u>RoT:</u> $1 million is a lot of money.<br>
+												<em>Well-formed:</em> <b>NO</b>
+												<p style="font-size:8pt;color:grey;margin-left:20px">Reason: This is not about right and wrong.</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<br>
+							</li>							
+
+							<li>
+								<p><b>Fluent</b>: On a scale of 1-5, how much does the RoT align with what an English speaker might naturally say?</p>
+								<div class="panel panel-primary">
+									<div class="panel-body">
+										<h4>Examples</h4>
+										<ul>
+											<li><u>RoT:</u> Racism is wrong.<br>
+												<em>Fluency Score:</em> <b>5</b>
+												<p style="font-size:8pt;color:grey;margin-left:20px">Reason: This is a grammatical and fully natural sounding sentence.</p>
+											</li>
+											<li><u>RoT:</u> Racism is complete badness forever.<br>
+												<em>Fluency Score:</em> <b>4</b>
+												<p style="font-size:8pt;color:grey;margin-left:20px">Reason: This sentence is grammatical, but the phrase "complete badness forever" is an awkward way to say it is "wrong."</p>
+											</li>
+											<li><u>RoT:</u> You shouldn't believe in a racist perspective or a racist perspective.<br>
+												<em>Fluency Score:</em> <b>3</b>
+												<p style="font-size:8pt;color:grey;margin-left:20px">Reason: This sentence is grammatical but the phrase "a racist perspective or a racist perspective" is redundant and very unnatural for a human to say.</p>
+											</li>
+											<li><u>RoT:</u> You not should believe racist and no ever.<br>
+												<em>Fluency Score:</em> <b>2</b>
+												<p style="font-size:8pt;color:grey;margin-left:20px">Reason: This sentence is ungrammatical and unnatural. The meaning still comes across weakly.</p>
+											</li>
+											<li><u>RoT:</u> Racism to bad mix car 7 sleeplessly.<br>
+												<em>Fluency Score:</em> <b>1</b>
+												<p style="font-size:8pt;color:grey;margin-left:20px">Reason: This sentence is ungrammatical, unnatural, and not meaningful.</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<br>
+							</li>
+
+							<li>
+								<p><b>Relevant</b>: If we <em>assume the RoT is true</em>, then on a scale of 1-5, how well does the RoT apply to the Answer for this specific Question?</p>
+								<div class="panel panel-primary">
+									<div class="panel-body">
+										<h4>Examples</h4>
+										<p><b>Q:</b> My girlfriend thinks I cheated when I didn't, and now she's going to break up with me. What is the right thing for me to do? Help!</p>
+										<p><b>A:</b> Tell her that you love her and that you want her to be happy, but you can't be with someone who doesn't trust you.</p>
+										<em>Example RoTs with Relevance Scores:</em>
+										<ul>
+											<li><u>RoT:</u> It's important to be honest with your SO.<br>
+												<em>Relevance Score:</em> <b>5</b>
+												<p style="font-size:8pt;color:grey;margin-left:20px">Reason: The big issue in the situation is about how someone should talk to their girlfriend after a hurtful misunderstanding. This RoT applies directly to that issue.</p>
+												<p style="font-size:8pt;color:grey;margin-left:20px">Note: This gets a score of 5 even though none of the words in the RoT come from the Q/A</p>
+											</li>
+
+											<li><u>RoT:</u> You should lie to make your SO happy.<br>
+												<em>Relevance Score:</em> <b>5</b>
+												<p style="font-size:8pt;color:grey;margin-left:20px">Reason: Again, this RoT applies to the main issue about how someone should talk to their girlfriend after a hurtful misunderstanding.</p>
+												<p style="font-size:8pt;color:grey;margin-left:20px">Note: Even if you don't agree with the RoT, it can still have a relevance of 5, since we first assume it is true.</p>
+											</li>
+
+											<li><u>RoT:</u> It's wrong to cheat on your partner.<br>
+												<em>Relevance Score:</em> <b>4</b>
+												<p style="font-size:8pt;color:grey;margin-left:20px">Reason: The morals of "cheating on your partner" are important here, but this isn't quite the main idea in the question or the answer.</p>
+											</li>
+											<li><u>RoT:</u> It's wrong to cheat on your spouse.<br>
+												<em>Relevance Score:</em> <b>3</b>
+												<p style="font-size:8pt;color:grey;margin-left:20px">Reason: This is less relevant because the RoT is talking about one's spouse (marriage partner), when the original question was talking about one's girlfriend.</p>
+											</li>
+											<li><u>RoT:</u> It is important to help your spouse with the chores.<br>
+												<em>Relevance Score:</em> <b>2</b>
+												<p style="font-size:8pt;color:grey;margin-left:20px">Reason: Even though this RoT has to do with relationships generally, it isn't related to the Q/A pair, since the question isn't about chores or one's spouse.</p>
+											</li>
+											<li><u>RoT:</u> You shouldn't be happy when someone cheats in a card game.<br>
+												<em>Relevance Score:</em> <b>1</b>
+												<p style="font-size:8pt;color:grey;margin-left:20px">Reason: Cheating in a card game has absolutely nothing to do with the Q/A pair.</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<br>
+							</li>
+
+							<li>
+								<p><b>Global Consensus</b>: What percentage of people (globally) do you think would agree with the RoT?</p>
+								<div class="panel panel-primary">
+									<div class="panel-body">
+										<h4>Examples</h4>
+										<ul>
+									        <li><u>RoT:</u> It is wrong to kill your significant other.<br>
+									            <em>Consensus:</em> <b>&#62;99%</b>
+									        </li>
+									        <li><u>RoT:</u> You shouldn't charge money from family members for helping them.<br>
+									            <em>Consensus:</em> <b>~75% - 90%</b>
+									        </li>
+									        <li><u>RoT:</u> It is good to be involved in a community of faith.<br>
+									            <em>Consensus:</em> <b>50%</b>
+									        </li>
+									        <li><u>RoT:</u> Animals deserve human rights protections.<br>
+									            <em>Consensus:</em> <b>~5% - 25%</b>
+									        </li>
+									        <li><u>RoT:</u> It is good to be a cannibal.<br>
+									            <em>Consensus:</em> <b>&#60;1%</b>
+									        </li>
+										</ul>
+									</div>
+								</div>
+								<br>
+							</li>
+						</ol>
+			</div>
+		</div>
+	</div>
+
+	<crowd-form answer-format='flatten-objects'>
+		<h2>Task: Auto-Generated RoT Quality Inspection</h2>
+
+
+		<p>Thanks for participating! You will read an open-ended question (<a href="#QUESTION" title="${Q}"><b>Q</b></a>) followed by an answer (<a href="#ANSWER" title="${A}"><b>A</b></a>), and an RoT or "Rule of Thumb" that an AI system wrote to describe what could be right or wrong with the answer to the question. We want you to answer four questions about the quality of this RoT. If you have not already, please first read the <a href="#INSTRUCTIONS">Quality Inspection Criteria</a> instructions above, and then continue with the task.</p>
+
+		<div class="story-excerpt" style="margin-top: 40">
+			<a id="QUESTION"><h4>Q:</h4></a>
+
+			<div style="padding-left:20px;">
+				<p style="font-size:10pt">${Q}</p>
+			</div>
+		</div>
+
+
+		<div class="story-excerpt">
+			<a id="ANSWER"><h4>A:</h4></a>
+
+			<div style="padding-left:20px;">
+				<p id="s2" style="font-size:10pt">${A}</p>
+			</div>
+		</div>
+
+		<hr style="border-top: dotted 1px;" />
+		<div class="story-excerpt-highlight" style="margin-top: 40">
+			<h4>RoT:</h4>
+			<div style="padding-left:20px;">
+				<p style="font-size:10pt">${rot_generated}</p>
+			</div>
+		</div>
+
+		<!-- <h3>Questions (Scrolling)</h3> -->
+		<div class='scrolling_questions'>
+		<div style='padding:10px;'>
+
+
+			<p style="font-size:10pt;"><strong>1. Answer Alignment:</strong> Does the answer [<a href="#ANSWER" title="${A}"><b>A</b></a>] agree (follow) or disagree with (break) the RoT? </p>
+			<crowd-radio-group>
+				<crowd-radio-button name="A_agrees" id="A_agrees">Agree</crowd-radio-button>
+				<crowd-radio-button name="A_disagrees" id="A_disagrees">Disagree</crowd-radio-button>
+				<crowd-radio-button name="A_neither" id="A_neither">Neither</crowd-radio-button>
+			</crowd-radio-group>
+			<br>
+			<br>
+
+			<div>
+				2. <strong>Well-formed</strong>: Does the RoT explain the basics of good and bad behavior with a single <u>judgment</u> (e.g. "<em>You should</em>") and <u>action</u> (e.g. "<em>give money to the poor</em>")?
+				<p style="font-size:8pt;color:grey;margin-left:12px"><b>NOT Well-formed:</b> The RoT is not about right and wrong, or it does not have both a judgement and an action. </p>
+				<p style="font-size:8pt;color:grey;margin-left:12px"><b>Well-formed:</b> The RoT includes a judgement about right and wrong for a particular action.</p>
+			</div>
+			<crowd-radio-group>
+				<crowd-radio-button name="wellformed_no" id="wellformed_no">NOT Well-formed</crowd-radio-button>
+				<crowd-radio-button name="wellformed_yes" id="wellformed_yes">Well-formed</crowd-radio-button>
+			</crowd-radio-group>
+			<br>
+			<br>
+
+			<p style="font-size:10pt;">3. <strong>Fluent</strong>: On a scale of 1-5, how much does the RoT align with what an English speaker might naturally say?</p>
+			<p style="font-size:8pt;color:grey;margin-left:12px"><b>Not Fluent:</b> The RoT makes no sense or does not use standard English grammar / spelling. </p>
+			<p style="font-size:8pt;color:grey;margin-left:12px"><b>Very Fluent:</b> The RoT makes sense and sounds like what an English speaker would say.</p>
+			<crowd-radio-group>
+				(Not Fluent)<crowd-radio-button name="fluency_1" id="fluency_1"><b>1</b></crowd-radio-button>
+				<crowd-radio-button name="fluency_2" id="fluency_2"><b>2</b></crowd-radio-button>
+				<crowd-radio-button name="fluency_3" id="fluency_3"><b>3</b></crowd-radio-button>
+				<crowd-radio-button name="fluency_4" id="fluency_4"><b>4</b></crowd-radio-button>
+				<crowd-radio-button name="fluency_5" id="fluency_5"><b>5</b></crowd-radio-button>(Very Fluent)
+			</crowd-radio-group>
+			<br>
+			<br>
+
+			<p style="font-size:10pt;">4. <strong>Relevant</strong>: If we assume the RoT is true, then on a scale of 1-5, how well does the RoT apply to the Answer for this specific Question?</p>
+			<p style="font-size:8pt;color:grey;margin-left:12px"><b>Not Relevant:</b> The RoT has nothing to do with the Q/A pair.</p>
+			<p style="font-size:8pt;color:grey;margin-left:12px"><b>Very Relevant:</b> The RoT is very relevant; the Answer could clearly <em>break</em> or clearly <em>follow</em> the RoT.</p>
+			<crowd-radio-group>
+				(Not Relevant)<crowd-radio-button name="relevance_1" id="relevance_1"><b>1</b></crowd-radio-button>
+				<crowd-radio-button name="relevance_2" id="relevance_2"><b>2</b></crowd-radio-button>
+				<crowd-radio-button name="relevance_3" id="relevance_3"><b>3</b></crowd-radio-button>
+				<crowd-radio-button name="relevance_4" id="relevance_4"><b>4</b></crowd-radio-button>
+				<crowd-radio-button name="relevance_5" id="relevance_5"><b>5</b></crowd-radio-button>(Very Relevant)
+			</crowd-radio-group>
+			<br>
+			<br>
+
+			<p style="font-size:10pt;">5. <strong>Global Consensus</strong>: What percentage of people (globally) do you think would agree with the RoT? </p>
+			<crowd-radio-group>
+				<crowd-radio-button name="rot_consensus_1" id="rot_consensus_1"><span style="color:#666666"><b>&#60;1%</b></span></crowd-radio-button>
+				<crowd-radio-button name="rot_consensus_2" id="rot_consensus_2"><span style="color:#4F4F4F"><b>~5% - 25%</b></span></crowd-radio-button>
+				<crowd-radio-button name="rot_consensus_3" id="rot_consensus_3"><span style="color:#3D3D3D"><b>~50%</b></span></crowd-radio-button>
+				<crowd-radio-button name="rot_consensus_4" id="rot_consensus_4"><span style="color:#212121"><b>~75% - 90%</b></span></crowd-radio-button>
+				<crowd-radio-button name="rot_consensus_5" id="rot_consensus_5"><span style="color:#000000"><b>&#62;99%</b></span></crowd-radio-button>
+			</crowd-radio-group>
+
+			&nbsp;</div>
+			<!-- end q2 div -->
+			
+			<!--end allqs--><br />
+			<br />
+			&nbsp;
+			<p style="font-size:10pt;width:350pt"><b>Optional Feedback:</b> Thanks for filling out the questions! If something about the task was unclear, please leave a comment in the box below. We would like to make this HIT easier for future workers, so we really appreciate feedback. This is optional.</p>
+			<textarea cols="50" name="commentbox" rows="2" style="margin-left:10px;margin-top:10px"></textarea><br />
+			<br />
+			&nbsp;
+			<center onclick="getNext();"><span id="warning" style="display:none;color:red">Type in at least one word before continuing... </span> 
+				<input class="btn btn-primary" id="submitButton" onclick="getNext()" type="submit" value="Submit" /></center>
+		</div>
+		</div>
+		</div>
+	</crowd-form>
+<!-- end cell --></div>
+<!-- end page --></div>
+<!-- end wrapper --></fieldset>
+</section>
+<!-- End Content Body --><!-- close container -->
+
+<style type="text/css">
+/*div.scrolling_questions {
+  height: 400px;
+  overflow: scroll;
+  border-style: solid;
+}*/
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.info-panel {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+th {
+  font-weight: normal;
+}
+
+fieldset { padding: 10px; background:#fbfbfb; border-radius:5px; margin-bottom:5px; }
+.columns{
+    list-style-type: none;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    list-style-position: inside;
+}
+.unbulleted{
+    list-style-type: none;
+    padding:7px;
+    margin:0px;
+}
+.story-excerpt {
+  margin-bottom: 30;
+   margin-left:10;
+   min-width: 500px;
+   border:2px #333333;
+   background-color: #f2f2f2;
+   border-style: solid;
+   padding-right:10px;
+   padding-left:10px;
+   display:table;
+   border-radius:15px;
+}
+
+.story-excerpt-highlight {
+  margin-bottom: 30;
+   margin-left:10;
+   min-width: 500px;
+   border:2px #333333;
+   background-color: #ffbca1;
+   border-style: solid;
+   padding-right:10px;
+   padding-left:10px;
+   display:table;
+   border-radius:15px;
+}
+
+table{
+   font-size:10pt;
+}
+
+.foo {
+  width:120px;
+  color:black;
+}
+
+.example-table td, .example-table th{
+   border:1px solid grey;
+   text-align:center;
+   font-size: 10pt;
+}
+
+}
+</style>
+
+<script>
+    document.querySelector('crowd-form').onsubmit = function(e) {
+          if (!submit_form()) {
+              e.preventDefault();
+          }
+      }
+
+  function submit_form() {  
+    if ((!document.getElementById('wellformed_no').checked) && (!document.getElementById('wellformed_yes').checked)) {
+        alert("Please respond to (2) Well-formed");
+        return false;
+    }   
+    else if ((!document.getElementById('fluency_1').checked) && (!document.getElementById('fluency_2').checked) && (!document.getElementById('fluency_3').checked) && (!document.getElementById('fluency_4').checked) && (!document.getElementById('fluency_5').checked)) {
+        alert("Please respond to (3) Fluent");
+        return false;
+    }    
+    else if ((!document.getElementById('relevance_1').checked) && (!document.getElementById('relevance_2').checked) && (!document.getElementById('relevance_3').checked) && (!document.getElementById('relevance_4').checked) && (!document.getElementById('relevance_5').checked)) {
+        alert("Please respond to (4) Relevant");
+        return false;
+    }
+    else if ((!document.getElementById('rot_consensus_1').checked) && (!document.getElementById('rot_consensus_2').checked) && (!document.getElementById('rot_consensus_3').checked) && (!document.getElementById('rot_consensus_4').checked) && (!document.getElementById('rot_consensus_5').checked)) {
+        alert("Please respond to (5) Global Consensus");
+        return false;
+    }
+    else {
+      return true;
+    }
+  }
+</script>

@@ -1,0 +1,522 @@
+<QuestionForm xmlns='http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd'>  
+  <Overview>
+    <Title>Moral Foundations - Qualification Test</Title>
+    <FormattedContent><![CDATA[
+    <h1> Instructions </h1>
+    <p>Please answer 12 questions about "right" and "wrong." The prompts are the same in each case but the considerations are different. We will give you a bonus of $0.20 for completing this Qual.</p>
+    ]]></FormattedContent>
+  </Overview>
+
+  <Question>
+      <QuestionIdentifier>q_1</QuestionIdentifier>
+      <DisplayName>Q1</DisplayName>
+      <IsRequired>true</IsRequired>
+      <QuestionContent>
+        <FormattedContent><![CDATA[
+          <p>When you decide whether something is right or wrong, to what extent are the following considerations relevant to your thinking?</p>
+          <p><b>Consideration:</b> <em>Whether or not someone suffered emotionally.</em></p>
+        ]]></FormattedContent>
+      </QuestionContent>
+      <AnswerSpecification>
+        <SelectionAnswer>
+          <StyleSuggestion>radiobutton</StyleSuggestion>
+          <Selections>
+            <Selection>
+              <SelectionIdentifier>0</SelectionIdentifier>
+              <Text>[0]: Not at all relevant (It has nothing to do with my judgments of right and wrong)</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>1</SelectionIdentifier>
+              <Text>[1]: Not very relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>2</SelectionIdentifier>
+              <Text>[2]: Slightly relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>3</SelectionIdentifier>
+              <Text>[3]: Somewhat relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>4</SelectionIdentifier>
+              <Text>[4]: Very relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>5</SelectionIdentifier>
+              <Text>[5]: Extremely relevant (It is one of the most important factors when I judge right and wrong)</Text>
+            </Selection>
+          </Selections>
+        </SelectionAnswer>
+      </AnswerSpecification>
+  </Question>
+
+  <Question>
+      <QuestionIdentifier>q_2</QuestionIdentifier>
+      <DisplayName>Q2</DisplayName>
+      <IsRequired>true</IsRequired>
+      <QuestionContent>
+        <FormattedContent><![CDATA[
+          <p>When you decide whether something is right or wrong, to what extent are the following considerations relevant to your thinking?</p>
+          <p><b>Consideration:</b> <em>Whether or not some people were treated differently than others.</em></p>
+        ]]></FormattedContent>
+      </QuestionContent>
+      <AnswerSpecification>
+        <SelectionAnswer>
+          <StyleSuggestion>radiobutton</StyleSuggestion>
+          <Selections>
+            <Selection>
+              <SelectionIdentifier>0</SelectionIdentifier>
+              <Text>[0]: Not at all relevant (It has nothing to do with my judgments of right and wrong)</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>1</SelectionIdentifier>
+              <Text>[1]: Not very relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>2</SelectionIdentifier>
+              <Text>[2]: Slightly relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>3</SelectionIdentifier>
+              <Text>[3]: Somewhat relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>4</SelectionIdentifier>
+              <Text>[4]: Very relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>5</SelectionIdentifier>
+              <Text>[5]: Extremely relevant (It is one of the most important factors when I judge right and wrong)</Text>
+            </Selection>
+          </Selections>
+        </SelectionAnswer>
+      </AnswerSpecification>
+  </Question>
+
+  <Question>
+      <QuestionIdentifier>q_3</QuestionIdentifier>
+      <DisplayName>Q3</DisplayName>
+      <IsRequired>true</IsRequired>
+      <QuestionContent>
+        <FormattedContent><![CDATA[
+          <p>When you decide whether something is right or wrong, to what extent are the following considerations relevant to your thinking?</p>
+          <p><b>Consideration:</b> <em>Whether or not someone’s action showed love for his or her country.</em></p>
+        ]]></FormattedContent>
+      </QuestionContent>
+      <AnswerSpecification>
+        <SelectionAnswer>
+          <StyleSuggestion>radiobutton</StyleSuggestion>
+          <Selections>
+            <Selection>
+              <SelectionIdentifier>0</SelectionIdentifier>
+              <Text>[0]: Not at all relevant (It has nothing to do with my judgments of right and wrong)</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>1</SelectionIdentifier>
+              <Text>[1]: Not very relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>2</SelectionIdentifier>
+              <Text>[2]: Slightly relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>3</SelectionIdentifier>
+              <Text>[3]: Somewhat relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>4</SelectionIdentifier>
+              <Text>[4]: Very relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>5</SelectionIdentifier>
+              <Text>[5]: Extremely relevant (It is one of the most important factors when I judge right and wrong)</Text>
+            </Selection>
+          </Selections>
+        </SelectionAnswer>
+      </AnswerSpecification>
+  </Question>
+
+  <Question>
+      <QuestionIdentifier>q_4</QuestionIdentifier>
+      <DisplayName>Q4</DisplayName>
+      <IsRequired>true</IsRequired>
+      <QuestionContent>
+        <FormattedContent><![CDATA[
+          <p>When you decide whether something is right or wrong, to what extent are the following considerations relevant to your thinking?</p>
+          <p><b>Consideration:</b> <em>Whether or not someone showed a lack of respect for authority.</em></p>
+        ]]></FormattedContent>
+      </QuestionContent>
+      <AnswerSpecification>
+        <SelectionAnswer>
+          <StyleSuggestion>radiobutton</StyleSuggestion>
+          <Selections>
+            <Selection>
+              <SelectionIdentifier>0</SelectionIdentifier>
+              <Text>[0]: Not at all relevant (It has nothing to do with my judgments of right and wrong)</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>1</SelectionIdentifier>
+              <Text>[1]: Not very relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>2</SelectionIdentifier>
+              <Text>[2]: Slightly relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>3</SelectionIdentifier>
+              <Text>[3]: Somewhat relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>4</SelectionIdentifier>
+              <Text>[4]: Very relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>5</SelectionIdentifier>
+              <Text>[5]: Extremely relevant (It is one of the most important factors when I judge right and wrong)</Text>
+            </Selection>
+          </Selections>
+        </SelectionAnswer>
+      </AnswerSpecification>
+  </Question>
+
+  <Question>
+      <QuestionIdentifier>q_5</QuestionIdentifier>
+      <DisplayName>Q5</DisplayName>
+      <IsRequired>true</IsRequired>
+      <QuestionContent>
+        <FormattedContent><![CDATA[
+          <p>When you decide whether something is right or wrong, to what extent are the following considerations relevant to your thinking?</p>
+          <p><b>Consideration:</b> <em>Whether or not someone violated standards of purity and decency.</em></p>
+        ]]></FormattedContent>
+      </QuestionContent>
+      <AnswerSpecification>
+        <SelectionAnswer>
+          <StyleSuggestion>radiobutton</StyleSuggestion>
+          <Selections>
+            <Selection>
+              <SelectionIdentifier>0</SelectionIdentifier>
+              <Text>[0]: Not at all relevant (It has nothing to do with my judgments of right and wrong)</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>1</SelectionIdentifier>
+              <Text>[1]: Not very relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>2</SelectionIdentifier>
+              <Text>[2]: Slightly relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>3</SelectionIdentifier>
+              <Text>[3]: Somewhat relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>4</SelectionIdentifier>
+              <Text>[4]: Very relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>5</SelectionIdentifier>
+              <Text>[5]: Extremely relevant (It is one of the most important factors when I judge right and wrong)</Text>
+            </Selection>
+          </Selections>
+        </SelectionAnswer>
+      </AnswerSpecification>
+  </Question>
+
+  <Question>
+      <QuestionIdentifier>q_6</QuestionIdentifier>
+      <DisplayName>Q6</DisplayName>
+      <IsRequired>true</IsRequired>
+      <QuestionContent>
+        <FormattedContent><![CDATA[
+          <p>When you decide whether something is right or wrong, to what extent are the following considerations relevant to your thinking?</p>
+          <p><b>Consideration:</b> <em>Whether or not someone was good at math.</em></p>
+        ]]></FormattedContent>
+      </QuestionContent>
+      <AnswerSpecification>
+        <SelectionAnswer>
+          <StyleSuggestion>radiobutton</StyleSuggestion>
+          <Selections>
+            <Selection>
+              <SelectionIdentifier>0</SelectionIdentifier>
+              <Text>[0]: Not at all relevant (It has nothing to do with my judgments of right and wrong)</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>1</SelectionIdentifier>
+              <Text>[1]: Not very relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>2</SelectionIdentifier>
+              <Text>[2]: Slightly relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>3</SelectionIdentifier>
+              <Text>[3]: Somewhat relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>4</SelectionIdentifier>
+              <Text>[4]: Very relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>5</SelectionIdentifier>
+              <Text>[5]: Extremely relevant (It is one of the most important factors when I judge right and wrong)</Text>
+            </Selection>
+          </Selections>
+        </SelectionAnswer>
+      </AnswerSpecification>
+  </Question>
+
+  <Question>
+      <QuestionIdentifier>q_7</QuestionIdentifier>
+      <DisplayName>Q7</DisplayName>
+      <IsRequired>true</IsRequired>
+      <QuestionContent>
+        <FormattedContent><![CDATA[
+          <p>When you decide whether something is right or wrong, to what extent are the following considerations relevant to your thinking?</p>
+          <p><b>Consideration:</b> <em>Whether or not someone cared for someone weak or vulnerable.</em></p>
+        ]]></FormattedContent>
+      </QuestionContent>
+      <AnswerSpecification>
+        <SelectionAnswer>
+          <StyleSuggestion>radiobutton</StyleSuggestion>
+          <Selections>
+            <Selection>
+              <SelectionIdentifier>0</SelectionIdentifier>
+              <Text>[0]: Not at all relevant (It has nothing to do with my judgments of right and wrong)</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>1</SelectionIdentifier>
+              <Text>[1]: Not very relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>2</SelectionIdentifier>
+              <Text>[2]: Slightly relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>3</SelectionIdentifier>
+              <Text>[3]: Somewhat relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>4</SelectionIdentifier>
+              <Text>[4]: Very relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>5</SelectionIdentifier>
+              <Text>[5]: Extremely relevant (It is one of the most important factors when I judge right and wrong)</Text>
+            </Selection>
+          </Selections>
+        </SelectionAnswer>
+      </AnswerSpecification>
+  </Question>
+
+  <Question>
+      <QuestionIdentifier>q_8</QuestionIdentifier>
+      <DisplayName>Q8</DisplayName>
+      <IsRequired>true</IsRequired>
+      <QuestionContent>
+        <FormattedContent><![CDATA[
+          <p>When you decide whether something is right or wrong, to what extent are the following considerations relevant to your thinking?</p>
+          <p><b>Consideration:</b> <em>Whether or not someone acted unfairly.</em></p>
+        ]]></FormattedContent>
+      </QuestionContent>
+      <AnswerSpecification>
+        <SelectionAnswer>
+          <StyleSuggestion>radiobutton</StyleSuggestion>
+          <Selections>
+            <Selection>
+              <SelectionIdentifier>0</SelectionIdentifier>
+              <Text>[0]: Not at all relevant (It has nothing to do with my judgments of right and wrong)</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>1</SelectionIdentifier>
+              <Text>[1]: Not very relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>2</SelectionIdentifier>
+              <Text>[2]: Slightly relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>3</SelectionIdentifier>
+              <Text>[3]: Somewhat relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>4</SelectionIdentifier>
+              <Text>[4]: Very relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>5</SelectionIdentifier>
+              <Text>[5]: Extremely relevant (It is one of the most important factors when I judge right and wrong)</Text>
+            </Selection>
+          </Selections>
+        </SelectionAnswer>
+      </AnswerSpecification>
+  </Question>
+
+  <Question>
+      <QuestionIdentifier>q_9</QuestionIdentifier>
+      <DisplayName>Q9</DisplayName>
+      <IsRequired>true</IsRequired>
+      <QuestionContent>
+        <FormattedContent><![CDATA[
+          <p>When you decide whether something is right or wrong, to what extent are the following considerations relevant to your thinking?</p>
+          <p><b>Consideration:</b> <em>Whether or not someone did something to betray his or her group.</em></p>
+        ]]></FormattedContent>
+      </QuestionContent>
+      <AnswerSpecification>
+        <SelectionAnswer>
+          <StyleSuggestion>radiobutton</StyleSuggestion>
+          <Selections>
+            <Selection>
+              <SelectionIdentifier>0</SelectionIdentifier>
+              <Text>[0]: Not at all relevant (It has nothing to do with my judgments of right and wrong)</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>1</SelectionIdentifier>
+              <Text>[1]: Not very relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>2</SelectionIdentifier>
+              <Text>[2]: Slightly relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>3</SelectionIdentifier>
+              <Text>[3]: Somewhat relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>4</SelectionIdentifier>
+              <Text>[4]: Very relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>5</SelectionIdentifier>
+              <Text>[5]: Extremely relevant (It is one of the most important factors when I judge right and wrong)</Text>
+            </Selection>
+          </Selections>
+        </SelectionAnswer>
+      </AnswerSpecification>
+  </Question>
+
+  <Question>
+      <QuestionIdentifier>q_10</QuestionIdentifier>
+      <DisplayName>Q10</DisplayName>
+      <IsRequired>true</IsRequired>
+      <QuestionContent>
+        <FormattedContent><![CDATA[
+          <p>When you decide whether something is right or wrong, to what extent are the following considerations relevant to your thinking?</p>
+          <p><b>Consideration:</b> <em>Whether or not someone conformed to the traditions of society</em></p>
+        ]]></FormattedContent>
+      </QuestionContent>
+      <AnswerSpecification>
+        <SelectionAnswer>
+          <StyleSuggestion>radiobutton</StyleSuggestion>
+          <Selections>
+            <Selection>
+              <SelectionIdentifier>0</SelectionIdentifier>
+              <Text>[0]: Not at all relevant (It has nothing to do with my judgments of right and wrong)</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>1</SelectionIdentifier>
+              <Text>[1]: Not very relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>2</SelectionIdentifier>
+              <Text>[2]: Slightly relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>3</SelectionIdentifier>
+              <Text>[3]: Somewhat relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>4</SelectionIdentifier>
+              <Text>[4]: Very relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>5</SelectionIdentifier>
+              <Text>[5]: Extremely relevant (It is one of the most important factors when I judge right and wrong)</Text>
+            </Selection>
+          </Selections>
+        </SelectionAnswer>
+      </AnswerSpecification>
+  </Question>
+
+  <Question>
+      <QuestionIdentifier>q_11</QuestionIdentifier>
+      <DisplayName>Q11</DisplayName>
+      <IsRequired>true</IsRequired>
+      <QuestionContent>
+        <FormattedContent><![CDATA[
+          <p>When you decide whether something is right or wrong, to what extent are the following considerations relevant to your thinking?</p>
+          <p><b>Consideration:</b> <em>Whether or not someone did something disgusting.</em></p>
+        ]]></FormattedContent>
+      </QuestionContent>
+      <AnswerSpecification>
+        <SelectionAnswer>
+          <StyleSuggestion>radiobutton</StyleSuggestion>
+          <Selections>
+            <Selection>
+              <SelectionIdentifier>0</SelectionIdentifier>
+              <Text>[0]: Not at all relevant (It has nothing to do with my judgments of right and wrong)</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>1</SelectionIdentifier>
+              <Text>[1]: Not very relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>2</SelectionIdentifier>
+              <Text>[2]: Slightly relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>3</SelectionIdentifier>
+              <Text>[3]: Somewhat relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>4</SelectionIdentifier>
+              <Text>[4]: Very relevant</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>5</SelectionIdentifier>
+              <Text>[5]: Extremely relevant (It is one of the most important factors when I judge right and wrong)</Text>
+            </Selection>
+          </Selections>
+        </SelectionAnswer>
+      </AnswerSpecification>
+  </Question>
+
+  <Question>
+      <QuestionIdentifier>q_12</QuestionIdentifier>
+      <DisplayName>Political Views</DisplayName>
+      <IsRequired>true</IsRequired>
+      <QuestionContent>
+        <FormattedContent><![CDATA[
+          <p>Which of the following best describe your political views?</p>
+          <p><b>Consideration:</b> <em>Whether or not someone did something disgusting.</em></p>
+        ]]></FormattedContent>
+      </QuestionContent>
+      <AnswerSpecification>
+        <SelectionAnswer>
+          <StyleSuggestion>radiobutton</StyleSuggestion>
+          <Selections>
+            <Selection>
+              <SelectionIdentifier>liberal</SelectionIdentifier>
+              <Text>Liberal</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>mod-liberal</SelectionIdentifier>
+              <Text>Moderate Liberal</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>mod-cons</SelectionIdentifier>
+              <Text>Moderate Conservative</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>cons</SelectionIdentifier>
+              <Text>Conservative</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>libert</SelectionIdentifier>
+              <Text>Libertarian</Text>
+            </Selection>
+          </Selections>
+        </SelectionAnswer>
+      </AnswerSpecification>
+  </Question>
+
+</QuestionForm>

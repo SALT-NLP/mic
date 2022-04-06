@@ -1,0 +1,281 @@
+<QuestionForm xmlns='http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd'>  
+  <Overview>
+    <Title>Q/A Filtering - Qualification Test</Title>
+    <FormattedContent><![CDATA[
+    <h1> Instructions </h1>
+
+    Please read these instructions closely, and then complete the YES/NO questions below. You will need to answer at least 5/6 questions correctly.
+    <p>First, you will read an open-ended question (<b>Q</b>) followed by an auto-generated answer (<b>A</b>) and then help us with the following judgments</p>
+    <ol>
+        <li>
+            <p><u>Sufficiency:</u> Does the answer (A) it sufficiently answer the question (Q)? To do so, it should be understandable, specific, and relevant.</p>
+            <ul>
+                <li>
+                    <h4>Example (YES)</h4>
+                    <p><b>Q:</b> Who is your role model and why?</p>
+                    <p><b>A:</b> My role model is Oscar the Grouch because he is a force for good in the world.</p>
+                    <p><b>Judgment:</b> <em>Yes.</em> Even though it is strange, the answer is understandable and relevant and it sufficiently answers the question.</p>
+                </li>
+
+                <li>
+                    <h4>Example (NO)</h4>
+                    <p><b>Q:</b> Have you ever been wrongly accused of a crime?</p>
+                    <p><b>A:</b> I have not. I have been accused of a crime.</p>
+                    <p><b>Judgment</b> <em>No.</em> The answer is contradictory, so it is not understandable.</p>
+                </li>
+
+                <li>
+                    <h4>Example (NO)</h4>
+                    <p><b>Q:</b> What are the best flowers (bouquet or not) to get for Mothers day?</p>
+                    <p><b>A:</b> I think he should discuss the school project with her next Tuesday.</p>
+                    <p><b>Judgment</b> <em>No.</em> The answer is understandable but not <em>relevant</em>. It does not answer (Q).</p>
+                </li>
+
+                <li>
+                    <h4>Example (NO)</h4>
+                    <p><b>Q:</b> What do you like to do?</p>
+                    <p><b>A:</b> I like to do many things! What do you like to do?</p>
+                    <p><b>Judgment</b> <em>No.</em> The answer is understandable and relevant but not <em>specific</em> enough to sufficiently answer (Q).</p>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <p><u>Friction:</u> Is the answer (A) rude, impolite, selfish, condescending, or phrased in a socially inappropriate way?</p>
+            <ul>
+                <li>
+                    <h4>Example (YES)</h4>
+                    <p><b>Q:</b> I just found out my best friend self-harms. What do I do?</p>
+                    <p><b>A:</b> Nothing. Sucks to be them.</p>
+                    <p><b>Judgment</b> <em>Yes.</em> The answer is insensitive and completely inappropriate.</p>
+                </li>
+
+                <li>
+                    <h4>Example (YES)</h4>
+                    <p><b>Q:</b> Who is your role model and why?</p>
+                    <p><b>A:</b> I am my greatest role model because I'm extremely impressive.</p>
+                    <p><b>Judgment</b> <em>Yes.</em>The answer is selfish and egotistical, which is socially unacceptable.</p>
+                </li>
+
+                <li>
+                    <h4>Example (YES)</h4>
+                    <p><b>Q:</b> What do you think is the biggest threat to America? </p>
+                    <p><b>A:</b> Welfare queens are the biggest threat.</p>
+                    <p><b>Judgment</b> <em>Yes.</em>The phrase <em>welfare queen</em> is a derogatory term, so this answer socially unacceptable.</p>
+                </li>
+
+                <li>
+                    <h4>Example (NO)</h4>
+                    <p><b>Q:</b> Is it acceptable to spank a stranger's child?</p>
+                    <p><b>A:</b> I think it's acceptable to spank a stranger's child.</p>
+                    <p><b>Judgment</b>  <em>No.</em> Although the behavior described may be inappropriate to some people, the answer is not <em>phrased</em> in a socially inappropriate way, nor is it rude, condescending, etc.</p>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <p><u>Moral Content:</u> Does the answer (A) reflect any opinion, idea, or behavior that someone could judge as being "right" or "wrong"?</p>
+            <ul>
+                <li>
+                    <h4>Example (YES)</h4>
+                    <p><b>Q:</b> Is it acceptable to spank a stranger's child?</p>
+                    <p><b>A:</b> I think it's acceptable to spank a stranger's child.</p>
+                    <p><b>Judgment</b>  <em>Yes.</em> The idea of spanking a stranger's child could be judged as right or wrong. </p>
+                </li>
+
+                <li>
+                    <h4>Example (YES)</h4>
+                    <p><b>Q:</b> My Aunt is suffering from verbal abuse. What do you think?</p>
+                    <p><b>A:</b> I'm so sorry to hear that.</p>
+                    <p><b>Judgment</b> <em>Yes.</em> The answer reflects a comforting behavior that someone could judge as right or wrong</p>
+                </li>
+
+                <li>
+                    <h4>Example (YES)</h4>
+                    <p><b>Q:</b> What do you think is the biggest threat to America? </p>
+                    <p><b>A:</b> Welfare queens are the biggest threat.</p>
+                    <p><b>Judgment</b> <em>Yes.</em>The anti-poor sentiment in this response could be judged as right or wrong.</p>
+                </li>
+
+                <li>
+                    <h4>Example (NO)</h4>
+                    <p><b>Q:</b> Have you ever met someone who confessed to a crime they did not commit?</p>
+                    <p><b>A:</b> I have not. I have never met a person who has confessed to a crime they did not commit.</p>
+                    <p><b>Judgment</b> <em>No.</em> This answer is just information and we can not judge it to be "right" or "wrong."</p>
+                </li>
+            </ul>
+        </li>
+
+    </ol>
+    ]]></FormattedContent>
+  </Overview>
+
+  <Question>
+      <QuestionIdentifier>q_1</QuestionIdentifier>
+      <DisplayName>Q1</DisplayName>
+      <IsRequired>false</IsRequired>
+      <QuestionContent>
+        <FormattedContent><![CDATA[
+          <p><b>Sufficiency</b> Does the answer (A) it sufficiently answer the question (Q)? To do so, it should be understandable, specific, and relevant.</p>
+            <p><b>Q:</b> <em>Have you ever met someone who confessed to a crime they did not commit?</em></p>
+            <p><b>A:</b> <em>That's a pointless question. Of course I haven't met someone like that.</em></p>
+        ]]></FormattedContent>
+      </QuestionContent>
+      <AnswerSpecification>
+        <SelectionAnswer>
+          <StyleSuggestion>radiobutton</StyleSuggestion>
+          <Selections>
+            <Selection>
+              <SelectionIdentifier>no</SelectionIdentifier>
+              <Text>No</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>yes</SelectionIdentifier>
+              <Text>Yes</Text>
+            </Selection>
+          </Selections>
+        </SelectionAnswer>
+      </AnswerSpecification>
+  </Question>
+
+  <Question>
+      <QuestionIdentifier>q_2</QuestionIdentifier>
+      <DisplayName>Q2</DisplayName>
+      <IsRequired>false</IsRequired>
+      <QuestionContent>
+        <FormattedContent><![CDATA[
+          <p><b>Friction:</b> Is the answer (A) rude, impolite, selfish, condescending, or phrased in a socially inappropriate way?</p>
+            <p><b>Q:</b> <em>Have you ever met someone who confessed to a crime they did not commit?</em></p>
+            <p><b>A:</b> <em>That's a pointless question. Of course I haven't met someone like that.</em></p>
+        ]]></FormattedContent>
+      </QuestionContent>
+      <AnswerSpecification>
+        <SelectionAnswer>
+          <StyleSuggestion>radiobutton</StyleSuggestion>
+          <Selections>
+            <Selection>
+              <SelectionIdentifier>no</SelectionIdentifier>
+              <Text>No</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>yes</SelectionIdentifier>
+              <Text>Yes</Text>
+            </Selection>
+          </Selections>
+        </SelectionAnswer>
+      </AnswerSpecification>
+  </Question>
+
+  <Question>
+      <QuestionIdentifier>q_3</QuestionIdentifier>
+      <DisplayName>Q3</DisplayName>
+      <IsRequired>false</IsRequired>
+      <QuestionContent>
+        <FormattedContent><![CDATA[
+          <p><b>Moral Content</b> Does the answer (A) reflect any opinion, idea, or behavior that someone could judge as being "right" or "wrong"? </p>
+            <p><b>Q:</b> <em>Have you ever met someone who confessed to a crime they did not commit?</em></p>
+            <p><b>A:</b> <em>That's a pointless question. Of course I haven't met someone like that.</em></p>
+        ]]></FormattedContent>
+      </QuestionContent>
+      <AnswerSpecification>
+        <SelectionAnswer>
+          <StyleSuggestion>radiobutton</StyleSuggestion>
+          <Selections>
+            <Selection>
+              <SelectionIdentifier>no</SelectionIdentifier>
+              <Text>No</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>yes</SelectionIdentifier>
+              <Text>Yes</Text>
+            </Selection>
+          </Selections>
+        </SelectionAnswer>
+      </AnswerSpecification>
+  </Question>
+
+  <Question>
+      <QuestionIdentifier>q_4</QuestionIdentifier>
+      <DisplayName>Q4</DisplayName>
+      <IsRequired>false</IsRequired>
+      <QuestionContent>
+        <FormattedContent><![CDATA[
+          <p><b>Sufficiency</b> Does the answer (A) it sufficiently answer the question (Q)? To do so, it should be understandable, specific, and relevant.</p>
+            <p><b>Q:</b> <em>Is it acceptable to spank a stranger's child?</em></p>
+            <p><b>A:</b> <em>I think I would set a park bench on fire if someone paid me.</em></p>
+        ]]></FormattedContent>
+      </QuestionContent>
+      <AnswerSpecification>
+        <SelectionAnswer>
+          <StyleSuggestion>radiobutton</StyleSuggestion>
+          <Selections>
+            <Selection>
+              <SelectionIdentifier>no</SelectionIdentifier>
+              <Text>No</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>yes</SelectionIdentifier>
+              <Text>Yes</Text>
+            </Selection>
+          </Selections>
+        </SelectionAnswer>
+      </AnswerSpecification>
+  </Question>
+
+  <Question>
+      <QuestionIdentifier>q_5</QuestionIdentifier>
+      <DisplayName>Q5</DisplayName>
+      <IsRequired>false</IsRequired>
+      <QuestionContent>
+        <FormattedContent><![CDATA[
+          <p><b>Friction:</b> Is the answer (A) rude, impolite, selfish, condescending, or phrased in a socially inappropriate way?</p>
+            <p><b>Q:</b> <em>Is it acceptable to spank a stranger's child?</em></p>
+            <p><b>A:</b> <em>I think I would set a park bench on fire if someone paid me.</em></p>
+        ]]></FormattedContent>
+      </QuestionContent>
+      <AnswerSpecification>
+        <SelectionAnswer>
+          <StyleSuggestion>radiobutton</StyleSuggestion>
+          <Selections>
+            <Selection>
+              <SelectionIdentifier>no</SelectionIdentifier>
+              <Text>No</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>yes</SelectionIdentifier>
+              <Text>Yes</Text>
+            </Selection>
+          </Selections>
+        </SelectionAnswer>
+      </AnswerSpecification>
+  </Question>
+
+  <Question>
+      <QuestionIdentifier>q_6</QuestionIdentifier>
+      <DisplayName>Q6</DisplayName>
+      <IsRequired>false</IsRequired>
+      <QuestionContent>
+        <FormattedContent><![CDATA[
+          <p><b>Moral Content</b> Does the answer (A) reflect any opinion, idea, or behavior that someone could judge as being "right" or "wrong"? </p>
+            <p><b>Q:</b> <em>Is it acceptable to spank a stranger's child?</em></p>
+            <p><b>A:</b> <em>I think I would set a park bench on fire if someone paid me.</em></p>
+        ]]></FormattedContent>
+      </QuestionContent>
+      <AnswerSpecification>
+        <SelectionAnswer>
+          <StyleSuggestion>radiobutton</StyleSuggestion>
+          <Selections>
+            <Selection>
+              <SelectionIdentifier>no</SelectionIdentifier>
+              <Text>No</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>yes</SelectionIdentifier>
+              <Text>Yes</Text>
+            </Selection>
+          </Selections>
+        </SelectionAnswer>
+      </AnswerSpecification>
+  </Question>
+
+</QuestionForm>

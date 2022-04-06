@@ -1,0 +1,323 @@
+<QuestionForm xmlns='http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd'>  
+  <Overview>
+    <Title>RoT Quality Inspection - Qualification Test</Title>
+    <FormattedContent><![CDATA[
+<h1> Instructions </h1>
+
+Please read these instructions closely, and then complete the questions below.
+<h2>Auto-Generated RoT Quality Inspection</h2>
+<p>You will read an open-ended question (Q) followed by an answer (A), and an RoT or "Rule of Thumb" that an AI system wrote to describe what could be right or wrong with the answer to the question. We want you to answer four questions about the quality of this RoT. Here are the questions and examples for each.</p>
+<ol>
+    <li>
+        <p><b>Answer Alignment:</b> Does the answer [<b>A</b>] agree (follow) or disagree with (break) the RoT?</em></p>
+        <h4>Examples</h4>
+        <p><b>Q:</b> If someone you trust offered you $1 million to kill the love of your life, would you do it?</p>
+        <p><b>A:</b> I'd do it for the money</p>
+        <ul>
+            <li><p><u>RoT:</u> It is bad to kill someone.</p>
+                <p><em>Answer Alignment:</em> <b>Disagree</b></p>
+                <p>Reason: The answer means the author is willing to kill someone, which disagrees with or breaks the Rule: "It is bad to kill someone."</p>
+            </li>
+            <li><p><u>RoT:</u> It is good to make money</p>
+                <p><em>Answer Alignment:</em> <b>Agree</b></p>
+                <p>Reason: The answer means the author wants to make money, which aligns with the Rule: "It is good to make money."</p>
+            </li>
+        </ul>
+    </li>
+
+    <li>
+        <p><b>Well-formed</b>: Does the RoT explain the basics of good and bad behavior with a single <u>judgment</u> (e.g. "<em>You should</em>") and <u>action</u> (e.g. "<em>give money to the poor</em>")?</p>
+        <h4>Examples</h4>
+        <p><b>Q:</b> If someone you trust offered you $1 million to kill the love of your life, would you do it?</p>
+        <p><b>A:</b> I'd do it for the money</p>
+        <em>Example RoTs:</em>
+        <ul>
+            <li><p><u>RoT:</u> It is wrong to kill someone.</p>
+                <p><em>Well-formed:</em> <b>Yes</b></p>
+                <p>Reason: This is about right and wrong, it has a judgment ("<em>it's wrong</em>"), and it is a general but also sufficiently detailed rule.</p>
+            </li>
+            <li><p><u>RoT:</u> It's wrong to do that.</p>
+                <p><em>Well-formed:</em> <b>NO</b></p>
+                <p>Reason: We can't understand this RoT outside of context because we don't know what <em>that</em> refers to.</p>
+            </li>
+            <li><p><u>RoT:</u> $1 million is a lot of money.</p>
+                <p><em>Well-formed:</em> <b>NO</b></p>
+                <p>Reason: This is not about right and wrong.</p>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <p><b>Relevant</b>: If we <em>assume the RoT is true</em>, then on a scale of 1-5, how well does the RoT apply to the Answer for this specific Question?</p>
+        <h4>Examples</h4>
+        <p><b>Q:</b> My girlfriend thinks I cheated when I didn't, and now she's going to break up with me. What is the right thing for me to do? Help!</p>
+        <p><b>A:</b> Tell her that you love her and that you want her to be happy, but you can't be with someone who doesn't trust you.</p>
+        <em>Example RoTs with Relevance Scores:</em>
+        <ul>
+            <li><p><u>RoT:</u> It's important to be honest with your SO.</p>
+                <p><em>Relevance Score:</em> <b>5</b></p>
+                <p>Reason: The big issue in the situation is about how someone should talk to their girlfriend after a hurtful misunderstanding. This RoT applies directly to that issue.</p>
+                <p>Note: This gets a score of 5 even though none of the words in the RoT come from the Q/A</p>
+            </li>
+
+            <li><p><u>RoT:</u> You should lie to make your SO happy.</p>
+                <em>Relevance Score:</em> <b>5</b>
+                <p>Reason: Again, this RoT applies to the main issue about how someone should talk to their girlfriend after a hurtful misunderstanding.</p>
+                <p>Note: Even if you don't agree with the RoT, it can still have a relevance of 5, since we first assume it is true.</p>
+            </li>
+
+            <li><p><u>RoT:</u> It's wrong to cheat on your partner.</p>
+                <p><em>Relevance Score:</em> <b>4</b></p>
+                <p>Reason: The morals of "cheating on your partner" are important here, but this isn't quite the main idea in the question or the answer.</p>
+            </li>
+            <li><p><u>RoT:</u> It's wrong to cheat on your spouse.</p>
+                <p><em>Relevance Score:</em> <b>3</b></p>
+                <p>Reason: This is less relevant because the RoT is talking about one's spouse (marriage partner), when the original question was talking about one's girlfriend.</p>
+            </li>
+            <li><p><u>RoT:</u> It is important to help your spouse with the chores.</p>
+                <p><em>Relevance Score:</em> <b>2</b></p>
+                <p>Reason: Even though this RoT has to do with relationships generally, it isn't related to the Q/A pair, since the question isn't about chores or one's spouse.</p>
+            </li>
+            <li><p><u>RoT:</u> You shouldn't be happy when someone cheats in a card game.</p>
+                <p><em>Relevance Score:</em> <b>1</b></p>
+                <p>Reason: Cheating in a card game has absolutely nothing to do with the Q/A pair.</p>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <p><b>Fluent</b>: On a scale of 1-5, how much does the RoT align with what an English speaker might naturally say?</p>
+        <h4>Examples</h4>
+        <ul>
+            <li><p><u>RoT:</u> Racism is wrong.</p>
+                <p><em>Fluency Score:</em> <b>5</b></p>
+                <p>Reason: This is a grammatical and fully natural sounding sentence.</p>
+            </li>
+            <li><p><u>RoT:</u> Racism is complete badness forever.</p>
+                <p><em>Fluency Score:</em> <b>4</b></p>
+                <p>Reason: This sentence is grammatical, but the phrase "complete badness forever" is an awkward way to say it is "wrong."</p>
+            </li>
+            <li><p><u>RoT:</u> You shouldn't believe in a racist perspective or a racist perspective.</p>
+                <p><em>Fluency Score:</em> <b>3</b></p>
+                <p>Reason: This sentence is grammatical but the phrase "a racist perspective or a racist perspective" is redundant and very unnatural for a human to say.</p>
+            </li>
+            <li><p><u>RoT:</u> You not should believe racist and no ever.</p>
+                <p><em>Fluency Score:</em> <b>2</b></p>
+                <p>Reason: This sentence is ungrammatical and unnatural. The meaning still comes across weakly.</p>
+            </li>
+            <li><p><u>RoT:</u> Racism to bad mix car 7 sleeplessly.</p>
+                <p><em>Fluency Score:</em> <b>1</b></p>
+                <p>Reason: This sentence is ungrammatical, unnatural, and not meaningful.</p>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <p><b>Consensus</b>: What percentage of people (globally) do you think would agree with the RoT?</p>
+        <h4>Examples</h4>
+        <ul>
+            <li><p><u>RoT:</u> It is wrong to kill your significant other.</p>
+                <p><em>Consensus:</em> <b>&#62;99%</b></p>
+            </li>
+            <li><p><u>RoT:</u> You shouldn't charge money from family members for helping them.</p>
+                <p><em>Consensus:</em> <b>~75% - 90%</b></p>
+            </li>
+            <li><p><u>RoT:</u> It is good to be involved in a community of faith.</p>
+                <p><em>Consensus:</em> <b>50%</b></p>
+            </li>
+            <li><p><u>RoT:</u> Animals deserve human rights protections.</p>
+                <p><em>Consensus:</em> <b>~5% - 25%</b></p>
+            </li>
+            <li><p><u>RoT:</u> It is good to be a cannibal.</p>
+                <p><em>Consensus:</em> <b>&#60;1%</b></p>
+            </li>
+        </ul>
+    </li>
+</ol>
+    ]]></FormattedContent>
+  </Overview>
+
+  <Question>
+      <QuestionIdentifier>q_1</QuestionIdentifier>
+      <DisplayName>Q1</DisplayName>
+      <IsRequired>true</IsRequired>
+      <QuestionContent>
+        <FormattedContent><![CDATA[
+        <p>(Relevant) Which of the example RoTs would get the highest <b>Relevance</b> score for the following Q/A pair?</p>
+        <p><b>Q:</b> What is the worst experience you've had with someone else's parents?</p>
+        <p><b>A:</b> The worst experience I've had was with my ex-wife's parents. They were very rude and contemptuous towards me.</p>
+        ]]></FormattedContent>
+      </QuestionContent>
+      <AnswerSpecification>
+        <SelectionAnswer>
+          <StyleSuggestion>radiobutton</StyleSuggestion>
+          <Selections>
+            <Selection>
+              <SelectionIdentifier>1</SelectionIdentifier>
+              <Text>It is bad to be rude to your ex-wife's parents.</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>2</SelectionIdentifier>
+              <Text>It is bad to talk to someone else's parents.</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>3</SelectionIdentifier>
+              <Text>It is bad for someone to scorn and mistreat their son-in-law.</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>4</SelectionIdentifier>
+              <Text>You shouldn't be rude to your friends.</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>5</SelectionIdentifier>
+              <Text>You shouldn’t be happy when someone cheats in a card game.</Text>
+            </Selection>
+          </Selections>
+        </SelectionAnswer>
+      </AnswerSpecification>
+  </Question>
+
+  <Question>
+      <QuestionIdentifier>q_2</QuestionIdentifier>
+      <DisplayName>Q2</DisplayName>
+      <IsRequired>true</IsRequired>
+      <QuestionContent>
+        <FormattedContent><![CDATA[
+        <p>(Consensus) What percentage of people (globally) do you think would agree with the RoT?</p>
+        <p><b>RoT:</b>It's bad to ask your family to pay you for little favors.</p>
+        ]]></FormattedContent>
+      </QuestionContent>
+        <AnswerSpecification>
+        <SelectionAnswer>
+          <StyleSuggestion>radiobutton</StyleSuggestion>
+          <Selections>
+            <Selection>
+              <SelectionIdentifier>1</SelectionIdentifier>
+              <Text>&#60;1%</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>5</SelectionIdentifier>
+              <Text>~5% - 25%</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>50</SelectionIdentifier>
+              <Text>~50%</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>75</SelectionIdentifier>
+              <Text>~75% - 90%</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>99</SelectionIdentifier>
+              <Text>&#62;99%</Text>
+            </Selection>
+          </Selections>
+        </SelectionAnswer>
+      </AnswerSpecification>
+  </Question>
+
+  <Question>
+      <QuestionIdentifier>q_3</QuestionIdentifier>
+      <DisplayName>Q3</DisplayName>
+      <IsRequired>true</IsRequired>
+      <QuestionContent>
+        <FormattedContent><![CDATA[
+        <p>(Well-formed) Is the RoT <b>well-formed</b> for the following Q/A pair?</p>
+        <p><b>Q:</b> If someone you trust offered you $1 million to kill the love of your life, would you do it?</p>
+        <p><b>A:</b> I'd do it for the money.</p>
+        <p><b>RoT:</b> I think it's wrong to do that.</p> 
+        ]]></FormattedContent>
+      </QuestionContent>
+        <AnswerSpecification>
+        <SelectionAnswer>
+          <StyleSuggestion>radiobutton</StyleSuggestion>
+          <Selections>
+            <Selection>
+              <SelectionIdentifier>yes</SelectionIdentifier>
+              <Text>Yes</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>no</SelectionIdentifier>
+              <Text>No</Text>
+            </Selection>
+          </Selections>
+        </SelectionAnswer>
+      </AnswerSpecification>
+  </Question>
+
+  <Question>
+      <QuestionIdentifier>q_4</QuestionIdentifier>
+      <DisplayName>Q4</DisplayName>
+      <IsRequired>true</IsRequired>
+      <QuestionContent>
+        <FormattedContent><![CDATA[
+        <p>(Fluent) On a scale of 1-5, how much does the RoT align with what an English speaker might naturally say?</p>
+        <p><b>RoT:</b>You shouldn't trust a sexist person or a sexist person.</p>  
+        ]]></FormattedContent>
+      </QuestionContent>
+      <AnswerSpecification>
+        <SelectionAnswer>
+          <StyleSuggestion>radiobutton</StyleSuggestion>
+          <Selections>
+            <Selection>
+              <SelectionIdentifier>1</SelectionIdentifier>
+              <Text>1</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>2</SelectionIdentifier>
+              <Text>2</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>3</SelectionIdentifier>
+              <Text>3</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>4</SelectionIdentifier>
+              <Text>4</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>5</SelectionIdentifier>
+              <Text>5</Text>
+            </Selection>
+          </Selections>
+        </SelectionAnswer>
+      </AnswerSpecification>
+  </Question>
+
+  <Question>
+      <QuestionIdentifier>q_5</QuestionIdentifier>
+      <DisplayName>Q5</DisplayName>
+      <IsRequired>true</IsRequired>
+      <QuestionContent>
+        <FormattedContent><![CDATA[
+        <p>(Consensus) What percentage of people (globally) do you think would agree with the RoT?</p>
+        <p><b>RoT:</b>It is a good idea to eat a living human.</p>  
+        ]]></FormattedContent>
+      </QuestionContent>
+        <AnswerSpecification>
+        <SelectionAnswer>
+          <StyleSuggestion>radiobutton</StyleSuggestion>
+          <Selections>
+            <Selection>
+              <SelectionIdentifier>1</SelectionIdentifier>
+              <Text>&#60;1%</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>5</SelectionIdentifier>
+              <Text>~5% - 25%</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>50</SelectionIdentifier>
+              <Text>~50%</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>75</SelectionIdentifier>
+              <Text>~75% - 90%</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>99</SelectionIdentifier>
+              <Text>&#62;99%</Text>
+            </Selection>
+          </Selections>
+        </SelectionAnswer>
+      </AnswerSpecification>
+  </Question>
+
+</QuestionForm>
