@@ -132,8 +132,6 @@ Prepare input files for HIT using data from `data/prepared/{model}_agg/filtered.
 hit/Task_QAFiltering/prepare_hit.py --model {model} --start_idx 0 --end_idx 100
 ```
 
-For full output CSVs from the HIT, use the download link [here](https://www.dropbox.com/sh/w0ux1d93ud37r0t/AAAswYLgcD-ZEdJIpPoOA8PNa?dl=0) and place them in `hit/Task_QAFiltering/output/`
-
 ##### Train classifiers to filter QA pairs
 
 1. Create train / dev / test splits for each of the chatbot distributions by running
@@ -173,12 +171,6 @@ qa_filtering_clf/clf_filtering.py --model "gpt-neo"
 
 ### 2. Run the Main RoT Annotation Task
 
-##### Note: 
-
-To start at this step, download the filtered QAs from one of the following links and place each in a new directory `.data/prepared/{model}_generations_agg/{model}_filtered_clf_sufficient_moral.csv` where `{model}` is replaced with the name of the model (`blenderbot`, `dialoGPT`, `gpt-neo`)
-
-* [Dropbox](https://www.dropbox.com/sh/q7tjmvo301j4gmu/AAAXIMfFIJLJSw_j0LM0ErFca?dl=0)
-
 Prepare hit files (choosing the `start_idx` and `end_idx` to indicate which portions of the )
 
 ```bash
@@ -198,10 +190,6 @@ python ./hit/Task_MoralEvaluation/qual_request.py
 ```
 
 Run the `MoralEvaluation.html` task on MTurk, using input from `./hit/Task_QAFiltering/input`, and saving output with the format  `./hit/output/filtered_clf_sufficient_moral_blenderbot_0_100_FINISHED.csv`
-
-You can download all raw batch outputs for this RoT Annotation Task here
-
-* [Dropbox](https://www.dropbox.com/sh/pcntf2vl9wquu2w/AAAkhfPX4MqDuJujmsD0BFDka?dl=0)
 
 After running all annotation batches, prepare MIC
 
