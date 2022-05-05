@@ -3,7 +3,7 @@ The Moral Integrity Corpus (MIC)
 
 This repository contains source code for the **The Moral Integrity Corpus: A Benchmark for Ethical Dialogue Systems** by [Caleb Ziems](https://calebziems.com/), Jane A. Yu, [Yi-Chia Wang](https://scholar.google.com/citations?user=9gMgFPQAAAAJ&hl=en), [Alon Y. Halevy](https://scholar.google.com/citations?user=F_MI0pcAAAAJ&hl=en), [Diyi Yang](https://www.cc.gatech.edu/~dyang888/)
 
-[[Paper]](https://faculty.cc.gatech.edu/~dyang888/docs/acl22_moral.pdf) | [[Data Use Agreement]](https://forms.gle/kp8bPgFoBHeNL4Q68) | [[Data]](https://www.dropbox.com/sh/m46z42nce8x0ttk/AABuSZiA6ESyrJNWmgTPrfuRa?dl=0)
+[[Paper]](https://arxiv.org/pdf/2204.03021.pdf) | [[Data Use Agreement]](https://forms.gle/kp8bPgFoBHeNL4Q68) | [[Data]](https://www.dropbox.com/sh/m46z42nce8x0ttk/AABuSZiA6ESyrJNWmgTPrfuRa?dl=0)
 
 ## *What is MIC?* 
 
