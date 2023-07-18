@@ -5,6 +5,14 @@ This repository contains source code for the **The Moral Integrity Corpus: A Ben
 
 [[Paper]](https://arxiv.org/pdf/2204.03021.pdf) | [[Data Use Agreement]](https://forms.gle/kp8bPgFoBHeNL4Q68) | [[Data]](https://www.dropbox.com/sh/m46z42nce8x0ttk/AABuSZiA6ESyrJNWmgTPrfuRa?dl=0)
 
+This work is licensed under a
+[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
+
+[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
+[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
+
 ## *What is MIC?* 
 
 Open-domain or "chit-chat" conversational agents often reflect insensitive, hurtful, or contradictory viewpoints that erode a user’s trust in the integrity of the system. Moral integrity is one important pillar for building trust. 
